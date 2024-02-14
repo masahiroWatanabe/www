@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>お問い合わせ ｜ NLC</title>
+	<meta name="description" content="NLCのお問合せ、ご質問はこちらで受付けております。個人情報の取扱いについてをご確認いただき、同意の上でご入力頂きますようお願い申し上げます。">
+	<meta name="keywords" content="">
+	<meta name="format-detection" content="telephone=no">
+	<link type="text/css" rel="stylesheet" href="../css/reset.css">
+	<link type="text/css" rel="stylesheet" href="../css/styles.css">
+	<link type="text/css" rel="stylesheet" href="../css/contact.css">
+	<link rel="icon" type="image/x-icon" href="../img/common/favicon.ico">
+</head>
+
+<body>
+
+<!-- ーーーーーーーーーーーーーーーヘッダーーーーーーーーーーーーーーーー -->
+
+<header id="header" class="header contact">
+	<h1 class="header-logo pc"><a href="../"></a></h1>
+	<p class="header-logo-sp sp"><img src="../img/common/header-logo-sp.png"></p>
+	<ul class="header-list">
+		<li class="icon"><a href="#about">Linyについて</a></li>
+		<li class="icon"><a href="#can">Linyができること</a></li>
+		<li class="icon"><a href="#case">導入事例</a></li>
+		<li class="icon"><a href="#price">料金について</a></li>
+		<li class="header-mail"><a href="../contact/"></a></li>
+	</ul>
+	<div class="sp-menu header-sp sp-only">
+		<div class="sp-menu-inner">
+		<span></span>
+		<span></span>
+		<span></span>
+		</div>
+	</div>
+	<div class="sp-menu-contact sp">
+		<a href="contact.html"><img src="../img/common/header-mail-up.png"></a>
+	</div>
+	<div class="sp-navi sp-only">
+
+		<div class="drop">
+			<ul class="drop__list">
+				<li class="sp-navi-item"><a href="../#about">Linyについて</a></li>
+				<li class="sp-navi-item"><a href="../#can">Linyができること</a></li>
+				<li class="sp-navi-item"><a href="../#case">導入事例</a></li>
+				<li class="sp-navi-item"><a href="../#price">料金について</a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+<div class="contents contact">
+
+	<div class="contact-inner">
+
+	<!-- ------------------------メインビジュアル------------------------ -->
+
+	<div class="contact-title">
+		<h2>
+			<img src="../img/common/contact-title.png" class="pc">
+			<img src="../img/common/contact-title-sp.png" class="sp">
+		</h2>
+	</div>
+	
+	<div class="contact-fllow">
+		<img src="../img/common/contact-fllow-1.png" class="pc">
+		<img src="../img/common/contact-fllow-1-sp.png" class="sp">
+	</div>
+
+
+	<!-- ーーーーーーーーーーーーーーーPC 右サイドボタンーーーーーーーーーーーーーーー -->
+
+	<div class="right-fix-btn pc" id="js-show-popup-4">
+		<div class="right-fix-btn-inner">
+			<div class="right-fix-btn-img"></div>
+			<p class="right-fix-btn-text"><img src="../img/common/right-fix-btn-text.png" alt=""></p>
+		</div>
+	</div>
+
+	<!-- ーーーーーーーーーーーーーーーモーダルーーーーーーーーーーーーーーー -->
+
+	<div class="popup" id="js-popup">
+		<div class="popup-inner">
+		  <div class="close-btn" id="js-close-btn"><img src="../img/common/close-btn.png" alt="閉じる"></div>
+		  	<p class="popup-text1 pc">LINEでデモ機能を体験</p>
+			<p class="popup-text2 pc">以下のQRコードをLINEで読み取って、<br>
+			友だち追加すると、 実際の機能が体験できます。
+			</p>
+			<p class="popup-text1 sp">LINEでデモ機能を体験</p>
+			<p class="popup-text2 sp">
+				下記のボタンからLINEで<br>
+				友だち追加すると、<br>
+				実際の機能が体験できます。</p>
+		  <div class="popup-QR"><img src="../img/common/QR.png" alt="QRコード"></div>
+		  <div class="popup-btn sp">
+			  <a href="https://liff.line.me/1656337061-Vk8DY8oB/landing?follow=@508kfiaa&liff_id=1656337061-Vk8DY8oB&lp=TSqA8B">LINEで友だち追加する</a>
+		  </div>
+		</div>
+		<div class="black-background" id="js-black-bg"></div>
+	</div>
+
+	<!-- ------------------------lead------------------------ -->
+
+	<p class="contact-lead">下記の記入欄に必要事項をご入力の上、<br class="sp">「確認する」を押してください。
+	</p>
+
+	<!-- ------------------------form------------------------ -->
+
+	<div class="footer-inner">
+		<form action="form-verification.php" method="post" class="contact-form">
+			<div class="form-block required">
+				<div class="form-label required">
+					<label for="">会社名</label>
+				</div>
+				<div class="form-input">
+					<input type="text" placeholder="例）○○○○株式会社" name="campany_name" value="" required="">
+					<span class="error"></span>
+				</div>
+			</div>
+			<div class="form-block required">
+				<div class="form-label required">
+					<label for="">担当者名</label>
+				</div>
+				<div class="form-input">
+					<input type="text" placeholder="例）山田太郎" name="manager_name" value="" required="">
+					<span class="error"></span>
+				</div>
+			</div>
+			<div class="form-block">
+				<div class="form-label">
+					<label for="">部署</label>
+				</div>
+				<div class="form-input">
+					<input type="text" placeholder="例）○○○○部" name="department" value="">
+					<span class="error"></span>
+				</div>
+			</div>
+			<div class="form-block required">
+				<div class="form-label">
+					<label for="">メールアドレス</label>
+				</div>
+				<div class="form-input">
+					<input type="text" placeholder="例）sample@email.com" name="mail" value="" required="">
+					<span class="error"></span>
+				</div>
+			</div>
+			<!-- <div class="form-block required">
+				<div class="form-label">
+					<label for="">メールアドレス(確認用)</label>
+				</div>
+				<div class="form-input">
+					<input type="text" placeholder="" name="mail_verification" value="" required="">
+					<span class="error"></span>
+				</div>
+			</div> -->
+			<div class="form-block required">
+				<div class="form-label">
+					<label for="">電話番号</label>
+				</div>
+				<div class="form-input">
+					<input type="text" placeholder="例）090-1234-5678" name="tel" value="" required="">
+					<span class="error"></span>
+				</div>
+			</div>
+		
+			<div class="form-block required last-type">
+				<div class="form-label">
+					<label for="">お問い合わせ内容</label>
+				</div>
+				<div class="form-input half textarea-box">
+					<textarea class="input-txt" rows="5" name="content" autocorrect="off" autocapitalize="off" placeholder=""></textarea>
+					<span class="error"></span>
+				</div>
+			</div>
+
+			<div class="form-note">
+				<p class="text1">※お問い合わせの内容によっては、回答までに日数を要する場合や、回答できない場合もございます。</p>
+				<p class="text2"><strong>個人情報の取り扱いについて</strong><br>
+					フォームにご入力頂いた情報は、お問い合わせへの対応、サービス及び関連情報の提供等に利用させていただきます。<br>
+					フォームにご入力頂いたお客様の個人情報は、当社「<a href="https://www.adop.co.jp/privacypolicy/" target="_blank">個人情報保護方針</a>」に基づいて厳重に管理いたします。
+				</p>
+			</div>
+
+			<div class="m-form-checkbox">
+				<label>
+					<input type="checkbox" name="agree" value="agreement">
+					<span class="m-form-checkbox-name">
+						<span class="m-form-checkbox-text">当社の個人情報保護方針に同意する。</span>
+					</span>
+				</label>
+			</div>
+
+			<div class="form-buttom">
+				<div id="confirmBtnWrap" class="confirm-btn-wrap">
+					<input id="submitButton" type="submit" name="confirm" class="confirm-btn" value="確認する">
+					<input type="hidden" name="ticket" value="">
+				</div>
+			</div>
+
+		</form>
+
+	</div>
+
+
+	</div>
+</div><!-- .contents閉じタグ -->
+
+
+	<!-- ------------------------フッター------------------------ -->
+
+	<footer class="footer">
+		<div class="pageTop">
+			<a href="#" class="pageTop-a"><img src="../img/common/pageTop.png"></a>
+		</div>
+		<div class="footer-company">
+			<p class="footer-logo"><img src="../img/common/footer-logo.png"></p>
+			<ul class="footer-link">
+				<li><a href="../#about">Linyについて</a></li>
+				<li><a href="../#can">Linyができること</a></li>
+				<li><a href="../#case">導入事例</a></li>
+				<li><a href="../#price">料金について</a></li>
+			</ul>
+		</div>
+		<div class="footer-adop">
+			<div class="footer-adop-inner">
+				<p class="footer-adop-logo"><img src="../img/common/footer-logo-adop.png"></p>
+				<ul class="footer-adop-link">
+					<li><a href="https://www.adop.co.jp/about/" target="_blank">運営会社</a></li>
+					<li><a href="https://www.adop.co.jp/company/" target="_blank">会社概要</a></li>
+					<li><a href="https://www.adop.co.jp/privacypolicy/" target="_blank">個人情報保護方針</a></li>
+					<li class="pc"><span class="copyright">© 2022 adop Inc.</sapn></li>
+				</ul>
+				<p class="copyright sp">© 2022 adop Inc.</p>
+			</div>
+		</div>
+		<div class="sp-bottom-fix sp" id="js-show-popup-5"><img src="../img/common/sp-bottom-fix.png"></div>
+	</footer>
+
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+
+</body>
+</html>
+
