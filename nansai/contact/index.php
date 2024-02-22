@@ -19,10 +19,10 @@
 <header id="header" class="header">
 	<div class="header-logo-area">
 		<p class="header-logo">
-			<a href="/"><img src="/img/common/header-logo.png" alt="ロゴ画像"></a>
+			<a href="/"><img src="../img/common/header-logo.png" alt="ロゴ画像"></a>
 		</p>
 		<p class="header-logo-funeral">
-			<a href="https://www.eranda.jp/sogi/sogijo/nansaikaikan" target="_blank"><img src="/img/common/header-funeral.png" alt="ロゴ画像"></a>
+			<a href="https://www.eranda.jp/sogi/sogijo/nansaikaikan" target="_blank"><img src="../img/common/header-funeral.png" alt="ロゴ画像"></a>
 		</p>
 		<div class="tel-box">
 			<p class="tel-box-text1">シキュウイチバンゴクヨー</p>
@@ -209,9 +209,9 @@
 	<footer class="footer">
 		<div class="footer-inner">
 			<div class="footer-logo-area">
-				<p class="footer-logo"><a href="/"><img src="/img/common/footer-logo.png" alt="ロゴ画像"></a></p>
+				<p class="footer-logo"><a href="/"><img src="../img/common/footer-logo.png" alt="ロゴ画像"></a></p>
 				<p class="footer-logo-funeral">
-					<a href="https://www.eranda.jp/sogi/sogijo/nansaikaikan" target="_blank"><img src="/img/common/header-funeral.png" alt="ロゴ画像"></a>
+					<a href="https://www.eranda.jp/sogi/sogijo/nansaikaikan" target="_blank"><img src="../img/common/header-funeral.png" alt="ロゴ画像"></a>
 				</p>
 			</div>
 			<ul class="footer-link">
