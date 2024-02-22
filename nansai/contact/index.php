@@ -19,7 +19,7 @@
 <header id="header" class="header">
 	<div class="header-logo-area">
 		<p class="header-logo">
-			<a href="/"><img src="../img/common/header-logo.png" alt="ロゴ画像"></a>
+			<a href="../"><img src="../img/common/header-logo.png" alt="ロゴ画像"></a>
 		</p>
 		<p class="header-logo-funeral">
 			<a href="https://www.eranda.jp/sogi/sogijo/nansaikaikan" target="_blank"><img src="../img/common/header-funeral.png" alt="ロゴ画像"></a>
@@ -29,19 +29,19 @@
 			<a class="tel-box-link" href="tel:0120-491-594">0120-491-594</a>
 			<p class="tel-box-text2">株式会社市民葬祭ホール</p>
 		</div>
-		<a href="/contact/" class="header-contact">
+		<a href="../contact/" class="header-contact">
 			<i></i>
 			<p>お問い合わせ</p>
 		</a>
 	</div>
 	<div class="header-list-area">
 		<ul class="header-list">
-			<li class=""><a href="/plan/">葬儀費用・プラン</a></li>
-			<li class=""><a href="/about/">南彩会館の特徴</a></li>
-			<li class=""><a href="/service/">葬祭用品・サービス</a></li>
+			<li class=""><a href="../plan/">葬儀費用・プラン</a></li>
+			<li class=""><a href="../about/">南彩会館の特徴</a></li>
+			<li class=""><a href="../service/">葬祭用品・サービス</a></li>
 			<li class="blank"><a href="http://www.kawaguchishi-megurinomori.jp/" target="_blank">川口市めぐりの森</a></li>
 			<li class="blank"><a href="https://www.nansai-pet.jp/" target="_blank">ペット火葬</a></li>
-			<li class=""><a href="/company/">会社概要</a></li>
+			<li class=""><a href="../company/">会社概要</a></li>
 		</ul>
 	</div>
 	<div class="sp-menu header-sp sp-only">
@@ -74,12 +74,12 @@
 							</dd>
 						</dl>
 					</li>
-					<li class="sp-navi-item"><a href="/about/">南彩会館の特徴</a></li>
-					<li class="sp-navi-item"><a href="/service/">葬祭用品・サービス</a></li>
+					<li class="sp-navi-item"><a href="../about/">南彩会館の特徴</a></li>
+					<li class="sp-navi-item"><a href="../service/">葬祭用品・サービス</a></li>
 					<li class="sp-navi-item blank"><a href="http://www.kawaguchishi-megurinomori.jp/" target="_blank">川口市めぐりの森</a></li>
 					<li class="sp-navi-item blank"><a href="https://www.nansai-pet.jp/" target="_blank">ペット火葬</a></li>
-					<li class="sp-navi-item"><a href="/company/">会社概要</a></li>
-					<li class="sp-navi-item"><a href="/contact/">お問い合わせ</a></li>
+					<li class="sp-navi-item"><a href="../company/">会社概要</a></li>
+					<li class="sp-navi-item"><a href="../contact/">お問い合わせ</a></li>
 				</ul>
 			</div>
 		</div>
@@ -215,13 +215,13 @@
 				</p>
 			</div>
 			<ul class="footer-link">
-				<li class=""><a href="/plan/">葬儀費用・プラン</a></li>
-				<li class=""><a href="/about/">南彩会館の特徴</a></li>
-				<li class=""><a href="/service/">葬祭用品・サービス</a></li>
+				<li class=""><a href="../plan/">葬儀費用・プラン</a></li>
+				<li class=""><a href="../about/">南彩会館の特徴</a></li>
+				<li class=""><a href="../service/">葬祭用品・サービス</a></li>
 				<li class="blank"><a href="http://www.kawaguchishi-megurinomori.jp/" target="_blank">川口市めぐりの森</a></li>
 				<li class="blank"><a href="https://www.nansai-pet.jp/" target="_blank">ペット火葬</a></li>
-				<li class=""><a href="/company/">会社概要</a></li>
-				<li class=""><a href="/contact/">お問い合わせ</a></li>
+				<li class=""><a href="../company/">会社概要</a></li>
+				<li class=""><a href="../contact/">お問い合わせ</a></li>
 			</ul>
 			<div class="footer-copyright">
 				<a class="privacy" href="/privacy/">プライバシーポリシー</a>
