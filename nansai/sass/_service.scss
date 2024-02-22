@@ -1,0 +1,333 @@
+
+/*==================================================================================
+　.service-mv
+==================================================================================*/
+
+.service-mv {
+    margin: 80px auto 80px;
+    .sp-title {
+        display: none;
+    }
+    .service-mv-inner {
+        display: flex;
+        .left {
+            width: 44%;
+            font-family: "BIZ UDPMincho";
+            padding-left: 12vw;
+            padding-right: 50px;
+            padding-top: 60px;
+            order: 1;
+            .text1 {
+                font-size: 7.2rem;
+                line-height: 8.8rem;
+                margin-bottom: 20px;
+                color: #102757;
+                small {
+                    font-size: 4rem;
+                }
+            }
+            .text4 {
+                font-size: 2rem;
+                line-height: 3.2rem;
+            }
+        }
+        .right {
+            width: 56vw;
+            order: 2;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .service-mv {
+        margin: 55px auto 60px;
+        .sp-title {
+            display: block;
+            margin-left: 5%;
+            margin-bottom: 20px;
+        }
+        .service-mv-inner {
+            display: block;
+            padding: 0 5%;
+            .left {
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: 0;
+                .text1 {
+                    font-size: 5.6rem;
+                    line-height: 7rem;
+                    margin-bottom: 10px;
+                    small {
+                        font-size: 3rem;
+                    }
+                }
+                .text4 {
+                    font-size: 1.8rem;
+                    line-height: 2.8rem;
+                    margin-bottom: 20px;
+                }
+            }
+            .right {
+                width: 100%;
+                margin-bottom: 20px;
+                display: none;
+            }
+        }
+    }
+
+}
+
+
+/*==================================================================================
+　.service-01
+==================================================================================*/
+
+.service-01 {
+    background-color:#F8F4EC;
+    margin-bottom: 0;
+    padding: 60px 5% 50px;
+    .service-01-inner {
+        max-width: 1024px;
+        margin: auto;
+        padding: 0;
+        .service-01-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .left {
+                order: 1;
+                width: 49%;
+                img {
+                    width: 100%;
+                }
+            }
+            .right {
+                order: 2;
+                width: 51%;
+                padding-left: 88px;
+                h2 {
+                    font-family: "BIZ UDPMincho";
+                    font-size: 3.2rem;
+                    color: #102757;
+                    margin-bottom: 30px;
+                    position: relative;
+                    &::before {
+                        content: "";
+                        display: block;
+                        width:32px;
+                        height: 4px;
+                        background-color: #4E6491;
+                        position: absolute;
+                        left: -49px;
+                        top: 13px;
+                    }
+                }
+                .text {
+                    font-family: "BIZ UDPMincho";
+                    font-size: 2rem;
+                    line-height: 3.2rem;
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .service-01 {
+        background-color:#F8F4EC;
+        margin-bottom: 0;
+        padding: 32px 5% 40px;
+        .service-01-inner {
+            max-width: 100%;
+            margin: auto;
+            padding: 0 5%;
+            .service-01-box {
+                display: block;
+                margin-bottom: 60px;
+                padding-left: 36px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .left {
+                    order: 1;
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .right {
+                    order: 2;
+                    width: 100%;
+                    padding-left: 0;
+                    h2 {
+                        font-family: "BIZ UDPMincho";
+                        font-size: 2.8rem;
+                        color: #102757;
+                        margin-bottom: 20px;
+                        position: relative;
+                        &::before {
+                            content: "";
+                            display: block;
+                            width:20px;
+                            height: 4px;
+                            background-color: #4E6491;
+                            position: absolute;
+                            left: -36px;
+                            top: 13px;
+                        }
+                    }
+                    .text {
+                        font-family: "BIZ UDPMincho";
+                        font-size: 1.8rem;
+                        line-height: 2.8rem;
+                        margin-bottom: 25px;
+                    }
+                }
+    
+            }
+        }
+    }
+}
+
+
+/*==================================================================================
+　.service-02
+==================================================================================*/
+
+.service-02 {
+    padding: 0;
+    .service-02-inner {
+        max-width: 1024px;
+        margin: auto;
+        padding: 0;
+        h2 {
+            font-family: "BIZ UDPMincho";
+            font-size: 3.2rem;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .lead {
+            font-family: "BIZ UDPMincho";
+            font-size: 2rem;
+            text-align: center;
+            line-height: 3.2rem;
+            margin-bottom: 40px;
+        }
+        .service-02-list {
+            border: 1px solid #A2A2A2;
+            padding: 25px 30px 15px;
+            background-color: #fff;
+            max-width: 720px;
+            margin: 0 auto 60px;
+            li {
+                font-size: 1.6rem;
+                line-height: 2.8rem;
+                margin-bottom: 5px;
+                padding-left: 1em;
+                text-indent: -1em;
+            }
+        }
+        .img-1 {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            figure {
+                width: 49.3%;
+            }
+        }
+        .img-2 {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 120px;
+            figure {
+                width: 32.3%;
+            }
+        }
+    }
+    .service-02-note {
+        background-color: #4E6491;
+        padding: 40px 0;
+        .inner {
+            max-width: 1088px;
+            margin: auto;
+            font-size: 1.6rem;
+            line-height: 2.8rem;
+            color: #fff;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .service-02 {
+        padding: 0;
+        .service-02-inner {
+            max-width: 100%;
+            margin: auto;
+            padding: 0 5%;
+            h2 {
+                font-family: "BIZ UDPMincho";
+                font-size: 2.8rem;
+                line-height: 3.2rem;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .lead {
+                font-family: "BIZ UDPMincho";
+                font-size: 1.8rem;
+                text-align: center;
+                line-height: 2.8rem;
+                margin-bottom: 25px;
+            }
+            .service-02-list {
+                border: 1px solid #A2A2A2;
+                padding: 20px;
+                background-color: #fff;
+                max-width: 100%;
+                margin: 0 auto 60px;
+                li {
+                    font-size: 1.6rem;
+                    line-height: 2.8rem;
+                    margin-bottom: 5px;
+                    padding-left: 1em;
+                    text-indent: -1em;
+                }
+            }
+            .img-1 {
+                display: block;
+                margin-bottom: 0;
+                figure {
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
+            }
+            .img-2 {
+                display: block;
+                margin-bottom: 25px;
+                figure {
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        .service-02-note {
+            background-color: #4E6491;
+            padding: 35px 5%;
+            .inner {
+                max-width: 100%;
+                margin: auto;
+                font-size: 1.6rem;
+                line-height: 2.8rem;
+                color: #fff;
+            }
+        }
+    }
+}

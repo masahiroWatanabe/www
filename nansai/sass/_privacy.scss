@@ -1,0 +1,125 @@
+
+/*==================================================================================
+　.privacy-01
+==================================================================================*/
+
+.privacy-01 {
+    background-color:#fff;
+    margin-bottom: 0;
+    padding: 70px 5% 60px;
+    .privacy-01-inner {
+        max-width: 1088px;
+        margin: auto;
+        padding: 0;
+        h1{
+            font-family: "BIZ UDPMincho";
+            font-size: 3.2rem;
+            color: #102757;
+            margin-bottom: 95px;
+            position: relative;
+            text-align: center;
+            &::after {
+                content: "";
+                width: 292px;
+                height: 4px;
+                background-color: #102757;
+                display: inline-block;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -20px;
+                margin: auto;
+            }
+        }
+        .lead {
+            font-family: "BIZ UDPMincho";
+            font-size: 1.6rem;
+            line-height: 2.8rem;
+            margin-bottom: 80px;
+        }
+        .box {
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #A2A2A2;
+            display: flex;
+            &:last-child {
+                padding-bottom: 0;
+                margin-bottom: 0;
+                border-bottom: 0; 
+            }
+            span {
+                font-size: 3.2rem;
+                font-family: "BIZ UDPMincho";
+                display: inline-block;
+                margin-right: 20px;
+                color: #010101;
+            }
+            p {
+                font-family: "BIZ UDPMincho";
+                font-size: 1.6rem;
+                line-height: 2.8rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+.privacy-01 {
+    background-color:#fff;
+    margin-bottom: 0;
+    padding: 35px 5% 40px;
+    .privacy-01-inner {
+        max-width: 100%;
+        margin: auto;
+        padding: 0;
+        h1{
+            font-family: "BIZ UDPMincho";
+            font-size: 2.8rem;
+            color: #102757;
+            margin-bottom: 60px;
+            position: relative;
+            text-align: center;
+            &::after {
+                content: "";
+                width: 260px;
+                height: 4px;
+                background-color: #102757;
+                display: inline-block;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -20px;
+                margin: auto;
+            }
+        }
+        .lead {
+            font-size: 1.6rem;
+            line-height: 2.8rem;
+            margin-bottom: 50px;
+        }
+        .box {
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #A2A2A2;
+            display: flex;
+            &:last-child {
+                padding-bottom: 0;
+                margin-bottom: 0;
+                border-bottom: 0; 
+            }
+            span {
+                font-size: 2.8rem;
+                font-family: "BIZ UDPMincho";
+                display: inline-block;
+                margin-right: 15px;
+                color: #010101;
+            }
+            p {
+                font-size: 1.6rem;
+                line-height: 2.8rem;
+            }
+        }
+    }
+}
+}

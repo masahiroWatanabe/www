@@ -1,0 +1,1352 @@
+/*==================================================================================
+  .pran-heade 
+==================================================================================*/
+
+.pran-header {
+    border-bottom: 1px solid #A2A2A2;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 2;
+    ul {
+        max-width: 1090px;
+        margin: auto;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        li {
+            width: 25%;
+            padding: 10px 0;
+            &.active {
+                background-color: #F8F4EC;
+            }
+            span {
+                font-family: "BIZ UDPMincho";
+                font-size: 2rem;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 64px;
+                border-right: 1px solid #A2A2A2;
+                &:first-child {
+                    border-left: 1px solid #A2A2A2;
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .pran-header {
+       display: none;
+    }
+}
+
+/*==================================================================================
+　.plan-mv
+==================================================================================*/
+
+.plan-mv {
+    margin: 30px auto 80px;
+    .sp-title {
+        display: none;
+    }
+    .plan-mv-inner {
+        display: flex;
+        .left {
+            width: 44%;
+            font-family: "BIZ UDPMincho";
+            padding-left: 12vw;
+            padding-right: 50px;
+            padding-top: 40px;
+            order: 1;
+            .text1 {
+                font-size: 7.2rem;
+                line-height: 6rem;
+                margin-bottom: 10px;
+                color: #102757;
+                small {
+                    font-size: 4rem;
+                }
+            }
+            .text2 {
+                font-size: 2.4rem;
+                margin-bottom:10px;
+                color: #102757;
+                strong {
+                    font-size: 4rem;
+                }
+            }
+            .text3 {
+                font-size: 2.4rem;
+                margin-bottom: 30px;
+                margin-left: 6.8rem;
+                color: #102757;
+                &.simple {
+                    margin-left: 4.8rem;
+                }
+                &.cremation {
+                    margin-left: 6.9rem;
+                }
+                &.oneDay {
+                    margin-left: 7.5rem;
+                }
+                &.family {
+                    margin-left: 7.2rem;
+                }
+            }
+            .text4 {
+                font-size: 2rem;
+                line-height: 3.2rem;
+                margin-bottom: 45px;
+            }
+            .text5 {
+                color: #C40000;
+                font-size: 1.6rem;
+                font-family:"BIZ UDGothic", "BIZ UDゴシック",sans-serif;
+            }
+        }
+        .right {
+            width: 56vw;
+            order: 2;
+            // height: 432px;
+            // background-image: url(../img/plan/mv-simple.png);
+            // background-size: cover;
+            // background-position: right top;
+            // background-repeat: no-repeat;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .plan-mv {
+        margin: 55px auto 60px;
+        .sp-title {
+            display: block;
+            margin-left: 5%;
+            margin-bottom: 20px;
+        }
+        .plan-mv-inner {
+            display: block;
+            padding: 0 5%;
+            .left {
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: 0;
+                .text1 {
+                    font-size: 5.6rem;
+                    line-height: 4.6rem;
+                    margin-bottom: 10px;
+                    small {
+                        font-size: 3rem;
+                    }
+                }
+                .text2 {
+                    font-size: 1.8rem;
+                    margin-bottom:10px;
+                    strong {
+                        font-size: 3rem;
+                    }
+                }
+                .text3 {
+                    font-size: 1.8rem;
+                    margin-bottom: 20px;
+                    margin-left: 5rem;
+                    &.simple {
+                        margin-left: 46px;
+                    }
+                    &.cremation {
+                        margin-left: 64px;
+                    }
+                    &.oneDay {
+                        margin-left: 68px;
+                    }
+                    &.family {
+                        margin-left: 65px;
+                    }
+                }
+                .text4 {
+                    font-size: 1.8rem;
+                    line-height: 2.8rem;
+                    margin-bottom: 20px;
+                }
+                .text5 {
+                    color: #C40000;
+                    font-size: 1.6rem;
+                    line-height: 2.8rem;
+                    font-family:"BIZ UDGothic", "BIZ UDゴシック",sans-serif;
+                }
+            }
+            .right {
+                display: none;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+}
+
+/*==================================================================================
+　.タグ切り替え
+==================================================================================*/
+
+.panel_area {
+    padding-top: 87px;
+ .show-content {
+    display: none;
+    &.active {
+        display: block;
+    }
+ }
+}
+
+@media (max-width: 768px) {
+    .panel_area {
+        padding-top: 0;
+    }
+}
+
+/*==================================================================================
+　.plan-01
+==================================================================================*/
+
+.plan-01 {
+    background-color:#F8F4EC;
+    margin-bottom: 105px;
+    .plan-01-inner {
+        padding: 85px 5% 100px;
+        .plan-h2 {
+            font-size: 3.2rem;
+            font-family: "BIZ UDPMincho";
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .flow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 944px;
+            margin: auto;
+            li {
+                background-color: #fff;
+                border-radius: 4px;
+                border: 1px solid #333333;
+                padding: 40px 27px 0;
+                text-align: center;
+                width: 80px;
+                height: 400px;
+                font-family: "BIZ UDPMincho";
+                font-size: 2rem;
+                writing-mode: vertical-rl;
+                display: flex;
+                align-items: center;
+                position: relative;
+                &.off {
+                    background-color: #F0F0F0;
+                    border: 1px solid #A2A2A2;
+                    color: #A2A2A2;
+                    &::after {
+                        display: none;
+                    }
+                }
+                &.arrow2 {
+                    &::after {
+                        content: "";
+                        background-image: url(../img/plan/flow-arrow2.png);
+                        background-size: cover;
+                        width: 630px;
+                        height: 30px;
+                        display: block;
+                        position: absolute;
+                        right: -636px;
+                        top: 185px;
+                        z-index: 2;
+                    }
+                }
+                &.arrow3 {
+                    &::after {
+                        content: "";
+                        background-image: url(../img/plan/flow-arrow3.png);
+                        background-size: cover;
+                        width: 342px;
+                        height: 30px;
+                        display: block;
+                        position: absolute;
+                        right: -349px;
+                        top: 185px;
+                        z-index: 2;
+                    }
+                }
+                &.arrow4 {
+                    &::after {
+                        content: "";
+                        background-image: url(../img/plan/flow-arrow4.png);
+                        background-size: cover;
+                        width: 198px;
+                        height: 30px;
+                        display: block;
+                        position: absolute;
+                        right: -205px;
+                        top: 185px;
+                        z-index: 2;
+                    }
+                }
+                &.list1 {
+                    i {
+                        width: 26px;
+                        height: 30px;
+                        background-image: url(../img/plan/flow-icon1.png);
+                        background-size: cover;
+                        display: block;
+                        margin-bottom: 90px;
+
+                    }
+                }
+                &.list2 {
+                    i {
+                        width: 21px;
+                        height: 30px;
+                        background-image: url(../img/plan/flow-icon2.png);
+                        background-size: cover;
+                        display: block;
+                        margin-bottom: 90px;
+
+                    }
+                }
+                &.list3 {
+                    i {
+                        width: 25px;
+                        height: 30px;
+                        background-image: url(../img/plan/flow-icon3.png);
+                        background-size: cover;
+                        display: block;
+                        margin-bottom: 90px;
+                    }
+                    &.off {
+                        i {
+                            width: 29px;
+                            height: 30px;
+                            background-image: url(../img/plan/flow-icon3-off.png);
+                            background-size: cover;
+                            display: block;
+                            margin-bottom: 90px;
+                        }
+                    }
+                }
+                &.list4 {
+                    i {
+                        width: 25px;
+                        height: 30px;
+                        background-image: url(../img/plan/flow-icon4.png);
+                        background-size: cover;
+                        display: block;
+                        margin-bottom: 90px;
+                    }
+                    &.off {
+                        i {
+                            width: 28px;
+                            height: 30px;
+                            background-image: url(../img/plan/flow-icon4-off.png);
+                            background-size: cover;
+                            display: block;
+                            margin-bottom: 90px;
+                        }
+                    }
+                }
+                &.list5 {
+                    i {
+                        width: 33px;
+                        height:30px;
+                        background-image: url(../img/plan/flow-icon5.png);
+                        background-size: cover;
+                        display: block;
+                        margin-bottom: 90px;
+
+                    }
+                    &.off {
+                        i {
+                            width: 33px;
+                            height:30px;
+                            background-image: url(../img/plan/flow-icon5-off.png);
+                            background-size: cover;
+                            display: block;
+                            margin-bottom: 90px;
+                        }
+                    }
+                }
+                &.list6 {
+                    i {
+                        width: 19px;
+                        height: 30px;
+                        background-image: url(../img/plan/flow-icon6.png);
+                        background-size: cover;
+                        display: block;
+                        margin-bottom: 90px;
+                    }
+                    &.off {
+                        i {
+                            width: 21px;
+                            height: 30px;
+                            background-image: url(../img/plan/flow-icon6-off.png);
+                            background-size: cover;
+                            display: block;
+                            margin-bottom: 90px;
+                        } 
+                    }
+                }
+                &.list7 {
+                    i {
+                        width: 24px;
+                        height: 30px;
+                        background-image: url(../img/plan/flow-icon7.png);
+                        background-size: cover;
+                        display: block;
+                        margin-bottom: 90px;
+
+                    }
+                }
+                &:after {
+                    content: "";
+                    background-image: url(../img/plan/flow-arrow1.png);
+                    background-size: cover;
+                    width: 55px;
+                    height: 30px;
+                    display: block;
+                    position: absolute;
+                    right: -61px;
+                    top: 185px;
+                }
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .plan-01 {
+        background-color:#F8F4EC;
+        margin-bottom: 60px;
+        .plan-01-inner {
+            padding: 40px 5% 35px;
+            .plan-h2 {
+                font-size: 2.8rem;
+                line-height: 4.4rem;
+                font-family: "BIZ UDPMincho";
+                text-align: center;
+                margin-bottom: 40px;
+            }
+
+            .flow {
+                display: block;
+                max-width: 100%;
+                margin: auto;
+                li {
+                    background-color: #fff;
+                    border-radius: 4px;
+                    border: 1px solid #333333;
+                    padding: 25px 0;
+                    text-align: center;
+                    width: 100%;
+                    height: 65px;
+                    font-family: "BIZ UDPMincho";
+                    font-size: 2rem;
+                    line-height: 1;
+                    writing-mode:horizontal-tb;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    margin-bottom: 30px;
+                    &.off {
+                        background-color: #F0F0F0;
+                        border: 1px solid #A2A2A2;
+                        color: #A2A2A2;
+                        &::after {
+                            display: none;
+                        }
+                    }
+                    &.arrow2 {
+                        &::after {
+                            content: "";
+                            background-image: url(../img/plan/flow-arrow2sp.png);
+                            background-size: cover;
+                            width: 24px;
+                            height: 395px;
+                            display: block;
+                            position: absolute;
+                            right: 0;
+                            left: 0;
+                            top: 0;
+                            bottom: -478px;
+                            z-index: 2;
+                            margin:auto
+                        }
+                    }
+                    &.arrow3 {
+                        &::after {
+                            content: "";
+                            background-image: url(../img/plan/flow-arrow3sp.png);
+                            background-size: cover;
+                            width: 24px;
+                            height: 205px;
+                            display: block;
+                            position: absolute;
+                            right: 0;
+                            left: 0;
+                            top: 0;
+                            bottom: -289px;
+                            z-index: 2;
+                        }
+                    }
+                    &.arrow4 {
+                        &::after {
+                            content: "";
+                            background-image: url(../img/plan/flow-arrow4sp.png);
+                            background-size: cover;
+                            width: 24px;
+                            height: 110px;
+                            display: block;
+                            position: absolute;
+                            right: 0;
+                            left: 0;
+                            top: 0;
+                            bottom: -191px;
+                            z-index: 2;
+                        }
+                    }
+                    &.list1 {
+                        i {
+                            width: 26px;
+                            height: 30px;
+                            background-image: url(../img/plan/flow-icon1.png);
+                            background-size: cover;
+                            display: block;
+                            margin-bottom: 0;
+                            position: absolute;
+                            left: 38px;
+                            top: 23px;
+                        }
+                    }
+                    &.list2 {
+                        i {
+                            width: 21px;
+                            height: 30px;
+                            background-image: url(../img/plan/flow-icon2.png);
+                            background-size: cover;
+                            display: block;
+                            margin-bottom: 0;
+                            position: absolute;
+                            left: 41px;
+                            top: 23px;
+                        }
+                    }
+                    &.list3 {
+                        i {
+                            width: 25px;
+                            height: 30px;
+                            background-image: url(../img/plan/flow-icon3.png);
+                            background-size: cover;
+                            display: block;
+                            margin-bottom: 0;
+                            position: absolute;
+                            left: 40px;
+                            top: 23px;
+                        }
+                    }
+                    &.list4 {
+                        i {
+                            width: 25px;
+                            height: 30px;
+                            background-image: url(../img/plan/flow-icon4.png);
+                            background-size: cover;
+                            display: block;
+                            margin-bottom: 0;
+                            position: absolute;
+                            left: 39px;
+                            top: 23px;
+                        }
+                    }
+                    &.list5 {
+                        i {
+                            width: 33px;
+                            height:30px;
+                            background-image: url(../img/plan/flow-icon5.png);
+                            background-size: cover;
+                            display: block;
+                            margin-bottom: 0;
+                            position: absolute;
+                            left: 36px;
+                            top: 23px;
+                        }
+                    }
+                    &.list6 {
+                        i {
+                            width: 19px;
+                            height: 30px;
+                            background-image: url(../img/plan/flow-icon6.png);
+                            background-size: cover;
+                            display: block;
+                            margin-bottom: 0;
+                            position: absolute;
+                            left: 42px;
+                            top: 23px;
+                        }
+                    }
+                    &.list7 {
+                        i {
+                            width: 24px;
+                            height: 30px;
+                            background-image: url(../img/plan/flow-icon7.png);
+                            background-size: cover;
+                            display: block;
+                            margin-bottom: 0;
+                            position: absolute;
+                            left: 40px;
+                            top: 23px;
+                        }
+                    }
+                    &:after {
+                        content: "";
+                        background-image: url(../img/plan/flow-arrow1sp.png);
+                        background-size: cover;
+                        width: 24px;
+                        height: 13px;
+                        display: block;
+                        position: absolute;
+                        right:0;
+                        left: 0;
+                        top: 0;
+                        bottom: -94px;
+                        margin: auto;
+                    }
+                    &:last-child {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*==================================================================================
+　.plan-02
+==================================================================================*/
+
+.plan-02 {
+    margin-bottom: 105px;
+    padding: 0 5%;
+    .plan-02-inner {
+        max-width: 1088px;
+        margin: auto;
+        .plan-h2 {
+            font-size: 3.2rem;
+            font-family: "BIZ UDPMincho";
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            li {
+                width: 19%;
+                height: 160px;
+                margin-bottom: 17px;
+                border: 1px solid #333333;
+                border-radius: 4px;
+                background-color: #fff;
+                text-align: center;
+                display: block;
+                margin-right: 1%;
+                box-sizing: border-box;
+                &:nth-child(5n) {
+                    margin-right: 0;
+                }
+                .inner {
+                }
+                i {
+                    text-align: center;
+                    display: inline-block;
+                }
+                p {
+                    font-size: 2rem;
+                    font-family: "BIZ UDPMincho";
+                    line-height: 2.4rem;
+                    text-align: center;
+                    span {
+                        color: #C40000;
+                    }
+                }
+                &.list1 {
+                    padding-top: 35px;
+                    i {
+                        margin-bottom: 23px;
+                        width: 66px;
+                    }
+                }
+                &.list2 {
+                    padding-top: 19px;
+                    i {
+                        margin-bottom: 31px;
+                        width: 67px;
+                    }
+                }
+                &.list3 {
+                    padding-top: 19px;
+                    i {
+                        margin-bottom: 23px;
+                        width: 45px;
+                    }
+                }
+                &.list4 {
+                    padding-top: 19px;
+                    i {
+                        margin-bottom: 23px;
+                        width: 52px;
+                    }
+                    &.b {
+                        i {
+                            margin-bottom: 11px;
+                        }
+                    }
+                }
+                &.list5 {
+                    padding-top: 19px;
+                    i {
+                        margin-bottom: 24px;
+                        width: 26px;
+                    }
+                }
+                &.list6 {
+                    padding-top: 19px;
+                    i {
+                        margin-bottom: 25px;
+                        width: 71px;
+                    }
+                }
+                &.list7 {
+                    padding-top: 36px;
+                    i {
+                        margin-bottom:22px;
+                        width: 64px;
+                    }
+                }
+                &.list8 {
+                    padding-top: 19px;
+                    i {
+                        margin-bottom: 25px;
+                        width: 61px;
+                    }
+                }
+                &.list9 {
+                    padding-top: 25px;
+                    i {
+                        margin-bottom: 19px;
+                        width: 64px;
+                    }
+                }
+                &.list10 {
+                    padding-top: 15px;
+                    i {
+                        margin-bottom: 8px;
+                        width: 43px;
+                    }
+                }
+                &.list11 {
+                    padding-top: 19px;
+                    i {
+                        margin-bottom: 22px;
+                        width: 59px;
+                    }
+                }
+                &.list12 {
+                    padding-top: 18px;
+                    i {
+                        margin-bottom: 13px;
+                        width: 43px;
+                    }
+                }
+                &.list13 {
+                    padding-top: 18px;
+                    i {
+                        margin-bottom: 13px;
+                        width: 39px;
+                    }
+                }
+                &.list14 {
+                    padding-top: 18px;
+                    i {
+                        margin-bottom: 13px;
+                        width: 57px;
+                    }
+                }
+                &.list15 {
+                    padding-top: 47px;
+                    i {
+                        margin-bottom: 28px;
+                        width: 71px;
+                    }
+                    &.b {
+                        i {
+                            margin-bottom: 19px;
+                        }
+                    }
+                    &.c {
+                        padding-top: 23px;
+                        i {
+                            margin-bottom: 19px;
+                        }
+                    }
+                    &.d {
+                        padding-top: 35px;
+                        i {
+                            margin-bottom: 19px;
+                        }
+                    }
+                }
+                &.list16 {
+                    padding-top: 23px;
+                    i {
+                        margin-bottom: 8px;
+                        width: 39px;
+                    }
+                }
+                &.list17 {
+                    padding-top: 16px;
+                    i {
+                        margin-bottom: 17px;
+                        width: 49px;
+                    }
+                }
+                &.list18 {
+                    padding-top: 21px;
+                    i {
+                        margin-bottom: 20px;
+                        width: 66px;
+                    }
+                }
+                &.list19 {
+                    padding-top: 21px;
+                    i {
+                        margin-bottom: 16px;
+                        width: 74px;
+                    }
+                }
+                &.list20 {
+                    padding-top: 36px;
+                    i {
+                        margin-bottom: 20px;
+                        width: 81px;
+                    }
+                }
+                &.list21 {
+                    padding-top: 19px;
+                    i {
+                        margin-bottom: 16px;
+                        width: 30px;
+                    }
+                }
+                &.list22 {
+                    padding-top: 19px;
+                    i {
+                        margin-bottom: 24px;
+                        width:48px;
+                    }
+                }
+                &.list23 {
+                    padding-top: 26px;
+                    i {
+                        margin-bottom: 27px;
+                        width: 77px;
+                    }
+                }
+                &.list24 {
+                    padding-top: 13px;
+                    i {
+                        margin-bottom: 9px;
+                        width: 73px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .plan-02 {
+        margin-bottom: 45px;
+        padding: 0 5%;
+        .plan-02-inner {
+            max-width: 100%;
+            margin: auto;
+            .plan-h2 {
+                font-size: 2.8rem;
+                line-height: 4.4rem;
+                font-family: "BIZ UDPMincho";
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                li {
+                    width: 48%;
+                    margin-bottom: 17px;
+                    margin-right: 0;
+                    border: 1px solid #333333;
+                    border-radius: 4px;
+                    background-color: #fff;
+                    text-align: center;
+                    display: block;
+                    height: 123px;
+                    .inner {
+                        vertical-align: middle;
+                    }
+                    i {
+                        text-align: center;
+                        display: inline-block;
+                        margin-bottom: auto;
+                    }
+                    p {
+                        font-size: 1.6rem;
+                        font-family: "BIZ UDPMincho";
+                        line-height: 2.4rem;
+                        span {
+                            color: #C40000;
+                        }
+                    }
+                    &.list1 {
+                        padding-top: 25px;
+                        padding-bottom: 10px;
+
+                        i {
+                            margin-bottom: 13px;
+                            width: 50px;
+                        }
+                    }
+                    &.list2 {
+                        padding-top: 17px;
+                        padding-bottom: 22px;
+                        i {
+                            margin-bottom: 20px;
+                            width: 51px;
+                        }
+                    }
+                    &.list3 {
+                        padding-top: 15px;
+                        padding-bottom: 24px;
+                        i {
+                            margin-bottom: 18px;
+                            width: 35px;
+                        }
+                    }
+                    &.list4 {
+                        padding-top: 15px;
+                        padding-bottom: 24px;
+                        i {
+                            margin-bottom: 17px;
+                            width: 40px;
+                        }
+                        &.b {
+                            padding-bottom: 8px;
+                            i {
+                                margin-bottom: 6px;
+                            }   
+                        }
+                    }
+                    &.list5 {
+                        padding-top: 14px;
+                        padding-bottom: 24px;
+                        i {
+                            margin-bottom: 17px;
+                            width: 20px;
+                        }
+                    }
+                    &.list6 {
+                        padding-top: 14px;
+                        padding-bottom: 24px;
+                        i {
+                            margin-bottom: 17px;
+                            width: 54px;
+                        }
+                    }
+                    &.list7 {
+                        padding-top: 24px;
+                        padding-bottom: 9px;
+                        i {
+                            margin-bottom: 13px;
+                            width: 49px;
+                        }
+                    }
+                    &.list8 {
+                        padding-top: 15px;
+                        padding-bottom: 21px;
+                        i {
+                            margin-bottom: 17px;
+                            width:47px;
+                        }
+                    }
+                    &.list9 {
+                        padding-top: 15px;
+                        padding-bottom: 9px;
+                        i {
+                            margin-bottom: 12px;
+                            width: 49px;
+                        }
+                    }
+                    &.list10 {
+                        padding-top: 6px;
+                        padding-bottom: 12px;
+                        i {
+                            margin-bottom: 4px;
+                            width: 33px;
+                        }
+                    }
+                    &.list11 {
+                        padding-top: 15px;
+                        padding-bottom: 24px;
+                        i {
+                            margin-bottom: 16px;
+                            width: 45px;
+                        }
+                    }
+                    &.list12 {
+                        padding-top: 14px;
+                        padding-bottom: 9px;
+                        i {
+                            margin-bottom: 6px;
+                            width: 33px;
+                        }
+                    }
+                    &.list13 {
+                        padding-top: 17px;
+                        padding-bottom: 12px;
+                        i {
+                            margin-bottom: 10px;
+                            width: 24px;
+                        }
+                    }
+                    &.list14 {
+                        padding-top: 8px;
+                        padding-bottom: 12px;
+                        i {
+                            margin-bottom: 9px;
+                            width: 43px;
+                        }
+                    }
+                    &.list15 {
+                        padding-top: 35px;
+                        padding-bottom: 24px;
+                        i {
+                            margin-bottom: 21px;
+                            width: 55px;
+                        }
+                        &.b {
+                            padding-top: 36px;
+                            padding-bottom: 12px;
+                            i {
+                                margin-bottom: 7px;
+                            }
+                        }
+                        &.c {
+                            padding-top: 10px;
+                            i {
+                                margin-bottom: 9px;
+                            }
+                        }
+                    }
+                    &.list16 {
+                        padding-top: 12px;
+                        padding-bottom: 12px;
+                        i {
+                            margin-bottom: 4px;
+                            width: 30px;
+                        }
+                        &.c {
+                            padding-top: 17px;
+                            padding-bottom: 9px;
+                            i {
+                                margin-bottom: 3px;
+                            }
+                        }
+                    }
+                    &.list17 {
+                        padding-top: 12px;
+                        padding-bottom: 24px;
+                        i {
+                            margin-bottom: 8px;
+                            width: 38px;
+                        }
+                    }
+                    &.list18 {
+                        padding-top: 15px;
+                        padding-bottom: 24px;
+                        i {
+                            margin-bottom: 12px;
+                            width: 50px;
+                        }
+                    }
+                    &.list19 {
+                        padding-top: 12px;
+                        padding-bottom: 7px;
+                        i {
+                            margin-bottom: 2px;
+                            width: 57px;
+                        }
+                    }
+                    &.list20 {
+                        padding-top: 29px;
+                        padding-bottom: 7px;
+                        i {
+                            margin-bottom: 9px;
+                            width: 62px;
+                        }
+                        &.c {
+                            padding-top: 28px;
+                            padding-bottom: 9px;
+                            i {
+                                margin-bottom: 9px;
+                            }
+                        }
+                    }
+                    &.list21 {
+                        padding-top: 12px;
+                        padding-bottom: 22px;
+                        i {
+                            margin-bottom: 17px;
+                            width: 21px;
+                        }
+                    }
+                    &.list22 {
+                        padding-top: 14px;
+                        padding-bottom: 22px;
+                        i {
+                            width:37px;
+                            margin-bottom: 16px;
+                        }
+                    }
+                    &.list23 {
+                        padding-top: 20px;
+                        padding-bottom: 24px;
+                        i {
+                            width: 59px;
+                            margin-bottom: 17px;
+                        }
+                    }
+                    &.list24 {
+                        padding-top: 9px;
+                        padding-bottom: 9px;
+                        i {
+                            width: 56px;
+                            margin-bottom: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+/*==================================================================================
+　.plan-03
+==================================================================================*/
+
+.plan-03 {
+    background-color:#F0F0F0;
+    padding: 60px 5% 30px;
+    .plan-03-inner {
+        max-width: 1088px;
+        margin: auto;
+        .payment {
+            display: flex;
+            background-color: #fff;
+            margin-bottom: 33px;
+            height: 112px;
+            .payment1 {
+                font-size: 1.6rem;
+                color: #fff;
+                background-color: #102757;
+                width: 160px;
+                height: 112px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .payment2 {
+                padding: 20px 39px 20px 24px;
+                width: 445px;
+                p {
+                    font-size: 1.6rem;
+                    margin-bottom: 20px;
+                }
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    li {
+                        .icon1 {
+                            width: 78px;
+                        }
+                        .icon2 {
+                            width: 71px;
+                        }
+                        .icon3 {
+                            width: 63px;
+                        }
+                        .icon4 {
+                            width: 48px;
+                        }
+                        .icon5 {
+                            width: 62px;
+                        }
+                    }
+                }
+            }
+            .payment3 {
+                border-left: 1px solid #A2A2A2;
+                padding: 0 20px;
+                width: 483px;
+                margin: 20px 0;
+                p {
+                    font-size: 1.6rem;
+                    &.border {
+                        padding-bottom: 20px;
+                        margin-bottom: 20px;
+                        border-bottom: 1px solid #A2A2A2;
+                    }
+                }
+            }
+        }
+        .note-text {
+            font-size: 1.6rem;
+            margin-bottom: 5px;
+        }
+        .note-ul {
+            margin-bottom: 30px;
+            li {
+                font-size: 1.6rem;
+                line-height: 2.8rem;
+                padding-left: 1em;
+                text-indent: -1em;
+            }
+        }
+        .color {
+            color: #C40000;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .plan-03 {
+        background-color:#F0F0F0;
+        padding: 40px 5% 20px;
+        .plan-03-inner {
+            max-width: 100%;
+            margin: auto;
+            .payment {
+                display: block;
+                background-color: #fff;
+                margin-bottom: 30px;
+                height: auto;
+                .payment1 {
+                    font-size: 1.6rem;
+                    color: #fff;
+                    background-color: #102757;
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px;
+                }
+                .payment2 {
+                    padding: 15px 20px;
+                    width: 100%;
+                    p {
+                        font-size: 1.6rem;
+                        margin-bottom: 25px;
+                    }
+                    ul {
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        li {
+                            .icon1 {
+                                width: 78px;
+                            }
+                            .icon2 {
+                                width: 71px;
+                            }
+                            .icon3 {
+                                width: 63px;
+                            }
+                            .icon4 {
+                                width: 48px;
+                            }
+                            .icon5 {
+                                width: 62px;
+                            }
+                        }
+                    }
+                }
+                .payment3 {
+                    border-left: 0;
+                    padding: 0 20px 20px;
+                    width: 100%;
+                    margin: 20px 0;
+                    p {
+                        font-size: 1.6rem;
+                        line-height: 2.8rem;
+                        &.border {
+                            padding-bottom: 20px;
+                            padding-top: 20px;
+                            margin-bottom: 20px;
+                            border-bottom: 1px solid #A2A2A2;
+                            border-top: 1px solid #A2A2A2;
+                            padding-left: 7.5em;
+                            text-indent: -7.5em;
+                        }
+                    }
+                }
+            }
+            .note-text {
+                font-size: 1.6rem;
+                margin-bottom: 5px;
+            }
+            .note-ul {
+                margin-bottom: 20px;
+                li {
+                    font-size: 1.6rem;
+                    line-height: 2.8rem;
+                    padding-left: 1em;
+                    text-indent: -1em;
+                }
+            }
+            .color {
+                color: #C40000;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,263 @@
+
+/*==================================================================================
+　.company-mv
+==================================================================================*/
+
+.company-mv {
+    margin: 80px auto 30px;
+    .sp-title {
+        display: none;
+    }
+    .company-mv-inner {
+        display: flex;
+        align-items: center;
+        .left {
+            width: 44%;
+            font-family: "BIZ UDPMincho";
+            padding-left: 12vw;
+            padding-right: 50px;
+            order: 1;
+            .text1 {
+                font-size: 7.2rem;
+                line-height: 8.8rem;
+                margin-bottom: 20px;
+                color: #102757;
+                small {
+                    font-size: 4rem;
+                }
+            }
+            .text4 {
+                font-size: 2rem;
+                line-height: 3.2rem;
+            }
+        }
+        .right {
+            width: 56vw;
+            order: 2;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .company-mv {
+        margin: 55px auto 25px;
+        .sp-title {
+            display: block;
+            margin-left: 5%;
+            margin-bottom: 20px;
+        }
+        .company-mv-inner {
+            display: block;
+            padding: 0 5%;
+            .left {
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+                .text1 {
+                    font-size: 5.6rem;
+                    line-height: 7rem;
+                    margin-bottom: 10px;
+                    small {
+                        font-size: 3rem;
+                    }
+                }
+                .text4 {
+                    font-size: 1.8rem;
+                    line-height: 2.8rem;
+                    margin-bottom: 20px;
+                }
+            }
+            .right {
+                width: 100%;
+                margin-bottom: 20px;
+                display: none;
+            }
+        }
+    }
+
+}
+
+/*==================================================================================
+　.company-01
+==================================================================================*/
+
+.company-01 {
+    background-color:#F8F4EC;
+    margin-bottom: 0;
+    padding: 60px 5% 60px;
+    .company-01-inner {
+        max-width: 1088px;
+        margin: auto;
+        padding: 0;
+        dl {
+            font-size: 1.6rem;
+            line-height: 2.8rem;
+            display: flex;
+            border-bottom: 1px solid #A2A2A2;
+            padding: 20px 0;
+            &:first-child{
+                border-top: 1px solid #A2A2A2;
+            }
+            dt {
+                padding: 20px 0;
+                border-right: 1px solid #A2A2A2;
+                width: 160px;
+                text-align: center;
+            }
+            dd {
+                padding: 20px 0 20px 40px;
+            }
+        }
+        .acsess {
+            margin-top: 60px;
+            iframe {
+                width: 100%;
+                height: 610px;
+                border: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .company-01 {
+        background-color:#F8F4EC;
+        margin-bottom: 0;
+        padding: 40px 5%;
+        .company-01-inner {
+            max-width: 100%;
+            margin: auto;
+            padding: 0;
+            dl {
+                font-size: 1.6rem;
+                line-height: 2.8rem;
+                display: flex;
+                border-bottom: 1px solid #A2A2A2;
+                padding: 10px 0;
+                &:first-child{
+                    border-top: 1px solid #A2A2A2;
+                }
+                dt {
+                    padding: 10px 0 10px 10px;
+                    border-right: 1px solid #A2A2A2;
+                    width: auto;
+                    text-align: left;
+                    width: 30%;
+                }
+                dd {
+                    width: 70%;
+                    padding: 10px 0 10px 10px;
+                }
+            }
+            .acsess {
+                margin: 55px auto 0;
+                iframe {
+                    width: 100%;
+                    height: 184px;
+                    border: 0;
+                }
+            }
+        }
+    }
+}
+
+
+/*==================================================================================
+　.company-02
+==================================================================================*/
+
+.company-02 {
+    background-image: url(../img/company/company-02-bg.png);
+    background-size: cover;
+    margin-bottom: 0;
+    padding: 105px 5% 60px;
+    .company-02-inner {
+        max-width: 1088px;
+        margin: auto;
+        padding: 0;
+        color: #fff;
+
+        h2 {
+            font-family: "BIZ UDPMincho";
+            font-size: 3.2rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .lead {
+            font-family: "BIZ UDPMincho";
+            font-size: 2rem;
+            line-height: 3rem;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        h3 {
+            font-family: "BIZ UDPMincho";
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 19px 0;
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                width: 33%;
+                font-size: 1.6rem;
+                line-height: 2.8rem;
+                margin-bottom: 35px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .company-02 {
+        background-image: url(../img/company/company-02-bg-sp.png);
+        background-size: cover;
+        margin-bottom: 0;
+        padding: 35px 5% 15px;
+        .company-02-inner {
+            max-width: 100%;
+            margin: auto;
+            padding: 0;
+            color: #fff;
+    
+            h2 {
+                font-family: "BIZ UDPMincho";
+                font-size: 2.8rem;
+                text-align: left;
+                line-height: 4.4rem;
+                margin-bottom: 25px;
+            }
+            .lead {
+                font-size: 1.8rem;
+                line-height: 2.8rem;
+                text-align: left;
+                margin-bottom: 25px;
+            }
+            h3 {
+                font-family: "BIZ UDPMincho";
+                font-size: 1.8rem;
+                text-align: center;
+                margin-bottom: 25px;
+                padding: 12px 0;
+                border-top: 1px solid #fff;
+                border-bottom: 1px solid #fff;
+            }
+            ul {
+                display: block;
+                li {
+                    width: 100%;
+                    font-size: 1.6rem;
+                    line-height: 2.8rem;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}

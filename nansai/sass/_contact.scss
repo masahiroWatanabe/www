@@ -1,0 +1,1101 @@
+
+/*==================================================================================
+　.contact
+==================================================================================*/
+
+
+.contact{
+	background-color: #fff;
+	h1{
+		font-family: "BIZ UDPMincho";
+		font-size: 2.8rem;
+		color: #102757;
+		margin-bottom: 21px;
+		position: relative;
+		text-align: center;
+		margin-top: 80px;
+
+		&::after {
+			content: "";
+			width: 193px;
+			height: 4px;
+			background-color: #102757;
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: -20px;
+			margin: auto;
+		}
+	}
+	.contact-lead {
+		font-size: 1.6rem;
+		line-height: 3.2rem;
+		font-weight: bold;
+		text-align: left;
+		margin: 0 auto 50px;
+		span {
+			color: #C40000;
+		}
+	}
+	.contact-wrap {
+		background-color: #F0F0F0;
+	}
+	.contact-inner {
+		max-width: 1088px;
+		margin: auto;
+		padding: 65px 0 80px;
+
+		.error-message {
+			border: 3px solid #C1272D;
+			background-color: #FCDEDD;
+			font-size: 2rem;
+			font-weight: bold;
+			color: #C1272D;
+			text-align: center;
+			padding: 20px;
+			span {
+				align-items: center;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				&::before {
+					content: "";
+					background-image:url(../img/common/error-message-icon.png);
+					background-size: 35px 30px;
+					background-repeat: no-repeat;
+					width: 35px;
+					height: 30px;
+					display: inline-block;
+					margin-right: 10px;
+				}
+			}
+		}
+
+		.contact-thanks1 {
+			font-size: 2.4rem;
+			font-weight: bold;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+		.contact-thanks2 {
+			font-size: 1.6rem;
+			line-height: 2.8rem;
+			text-align: center;
+			margin-bottom: 60px;
+		}
+		.thanks-btn {
+			background-color: #fff;
+			border: 3px solid #4E6491;
+			border-radius: 30px;
+			width: 322px;
+			height: 60px;
+			color: #4E6491;
+			font-size: 1.6rem;
+			font-weight: 600;
+			max-width: 322px;
+			transition: all 0.2s;
+			margin: auto;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			&:hover {
+				color: #fff;
+				background-color: #4E6491;
+				cursor: pointer;
+			}
+		}
+
+	}
+}
+
+
+.contact-form {
+	margin-top: 56px;
+	.form-block {
+		border-top: 1px solid #A2A2A2;
+		width: 100%;
+		display: flex;
+		box-sizing: border-box;
+		align-items: center;
+		&.required {
+			.form-label {
+				&:after {
+					position: absolute;
+					right: 15px;
+					top: 50%;
+					transform: translateY(-50%);
+					content: "必須";
+					padding: 5px 6px;
+					margin: auto;
+					font-size: 1.6rem;
+					font-weight: 700;
+					line-height: 1;
+					color: #fff;
+					background: #C40000;
+				}
+			}
+
+		}
+		&.last-type {
+			border-bottom: 1px solid #A2A2A2;
+		}
+		&.top {
+			align-items: flex-start;
+			.form-label {
+				padding-top: 35px;
+				&:after {
+					top: 60%;
+				}
+			}
+		}
+		.form-label {
+			position: relative;
+			font-size: 1.6rem;
+			color: #333333;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding-left: 35px;
+			word-break: break-all;
+			display: flex;
+			align-items: center;
+			width: 27%;
+			vertical-align: middle;
+			box-sizing: border-box;
+			label{
+				font-weight: bold;
+			}
+		}
+		.form-input {
+			font-size: 1.6rem;
+			word-break: break-all;
+			display: block;
+			align-items: center;
+			width: 73%;
+			vertical-align: top;
+			box-sizing: border-box;
+			padding: 20px 40px 8px 15px;
+			input {
+				width: 99%;
+				border: 0;
+				border: 1px solid #fff;
+				background: #fff;
+				padding: 18px 20px 18px 35px;
+				border-radius: 6px;
+				margin-bottom: 15px;
+
+				&::placeholder {
+					color: #A2A2A2;
+				}
+				&.wide-quarter {
+					width: 30%;
+					margin-bottom: 12px;
+				}
+			}
+			i {
+				display: inline-block;
+				font-size: 1.6rem;
+				font-weight: bold;
+				font-style: normal;
+				margin-right: 7px;
+			}
+		}
+
+		// ラジオボタン //
+		.m-form-radio-wrap {
+			display: flex;
+			justify-content: space-between;
+			padding: 17px 40px 12px 15px;
+		}
+		.m-form-radio{
+			input {
+				position: absolute;
+				white-space: nowrap;
+				width: 1px;
+				height: 1px;
+				overflow: hidden;
+				border: 0;
+				padding: 0;
+				clip: rect(0 0 0 0);
+				clip-path: inset(50%);
+				margin: -1px;
+			}
+		}
+		.m-form-radio-name {
+			cursor: pointer;
+			display: inline-flex;
+			align-items: center;
+			color: #666;
+			font-size: 1.8rem;
+			margin-right: 20px;
+			&:before {
+				content: "";
+				display: inline-block;
+				width: 1em;
+				height: 1em;
+				border: 1px solid #ccc;
+				border-radius: 50%;
+				margin-right: 5px;
+				flex-shrink: 0;
+				background-color: #fff;
+			}
+		}
+		.m-form-radio-text {
+			font-size: 1.6rem;
+		}
+		.m-form-radio input:checked + .m-form-radio-name:before {
+			border: 3px solid #fff;
+			background-color: #333333;
+		}
+
+		.m-form-radio input.focus-visible + .m-form-radio-name .m-form-radio-text {
+			background: #333333;
+		}
+
+		// テキストエリア //
+		.textarea-box textarea {
+			width: 99%;
+			border: 0;
+			height: calc( 1.3em * 8 );
+			line-height: 1.3;
+			font-size: 1.6rem;
+			line-height: 3rem;
+			border: 1px solid #fff;
+			background: #fff;
+			padding: 18px 20px 18px 35px;
+			border-radius: 6px;
+			margin-bottom: 15px;
+			&::placeholder {
+				color: #A2A2A2;
+			}
+		}
+	}
+
+	// チェックボックス //
+	.m-form-checkbox-wrap {
+		display: flex;
+		justify-content: space-between;
+	}
+	.m-form-checkbox{
+		width: 720px;
+		text-align: center;
+		background-color: #fff;
+		border: 1px solid #A2A2A2;
+		padding: 25px;
+		text-align: center;
+		margin: 55px auto 0;
+		input {
+			position: absolute;
+			white-space: nowrap;
+			width: 1px;
+			height: 1px;
+			overflow: hidden;
+			border: 0;
+			padding: 0;
+			clip: rect(0 0 0 0);
+			clip-path: inset(50%);
+			margin: -1px;
+		}
+		.m-form-checkbox-text {
+			font-size: 1.6rem;
+
+		}
+		.text{
+			font-size: 1.4rem;
+			line-height: 2.4rem;
+			text-align: center;
+			margin-top: 15px;
+			a {
+				color: #C40000;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.m-form-checkbox-name {
+		cursor: pointer;
+		display: inline-flex;
+		align-items: center;
+		color: #666;
+		position: relative;
+		font-size: 2rem;
+		&:before {
+			content: "";
+			display: inline-block;
+			width: 18px;
+			height: 18px;
+			border: 1px solid #333333;
+			border-radius: 3px;
+			margin-right: 10px;
+			flex-shrink: 0;
+		}
+	}
+
+	.m-form-checkbox input:checked + .m-form-checkbox-name:before {
+		border: 1px solid #333333;
+		background-color: #333333;
+	}
+
+	.m-form-checkbox input:checked + .m-form-checkbox-name:after {
+		content: "";
+		position: absolute;
+		border: solid #fff;
+		border-width: 0 2px 2px 0;
+		left: 0.3em;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		width: 0.4em;
+		height: 0.6em;
+		transform: translateY(-2px) rotate(45deg);
+	}
+
+	.m-form-checkbox input:focus-visible + .m-form-checkbox-name .m-form-checkbox-text {
+		background: linear-gradient(transparent 90%, rgba(33, 150, 243, 0.3) 90%);
+	}
+
+	.m-form-checkbox input.focus-visible + .m-form-checkbox-name .m-form-checkbox-text {
+		background: linear-gradient(transparent 90%, rgba(33, 150, 243, 0.3) 90%);
+	}
+
+	// エラー表示 //
+	.form-error {
+		.form-input{
+			input {
+				background-color: #FCDEDD;
+				border: 1px solid #C1272D;
+			}
+		}
+		.textarea-box{
+			textarea {
+				background-color: #FCDEDD;
+				border: 1px solid #C1272D;
+			}
+		}
+	}
+
+	// フォーム確認 //
+	.form-input-verification{
+		font-size: 1.6rem;
+		line-height: 3rem;
+		width: 73%;
+		padding: 20px 0;
+		i {
+			display: inline-block;
+			font-size: 1.6rem;
+			font-weight: bold;
+			font-style: normal;
+			margin-right: 7px;
+		}
+	}
+}
+
+
+
+p.error, span.error {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding: 0%;
+	display: block;
+	color: #C40000;
+}
+.form-input-radio {
+	padding-bottom: 2%;
+	width: 70%;
+	padding-left: 5%;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	display: flex;
+	align-items: center;
+}
+.form-input-radio-item {
+	display: inline-block;
+	margin-right: 15px;
+	label{
+		display: inline-block;
+		font-size: 1.6rem;
+		width: 100%;
+	}
+	input{
+		display: inline-block;
+	}
+	span{
+		display: inline-block;
+	}
+}
+
+.form-buttom-flex {
+	display: flex;
+	justify-content: space-between;
+	max-width: 720px;
+	margin: 80px auto 0;
+	.entry {
+		background-color: #fff;
+		border: 3px solid #4E6491;
+		border-radius: 30px;
+		width: 100%;
+		height: 60px;
+		color: #4E6491;
+		font-size: 1.6rem;
+		font-weight: 600;
+		max-width: 322px;
+		-webkit-transition: all 0.2s;
+		transition: all 0.2s;
+		order: 2;
+		&:hover {
+			color: #fff;
+			background-color: #4E6491;
+			cursor: pointer;
+		}
+	}
+	.return {
+		background-color: #A2A2A2;
+		max-width: 322px;
+		width: 100%;
+		border-radius: 30px;
+		height: 60px;
+		position: relative;
+		cursor: pointer;
+		border: 1px solid #707070;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.6rem;
+		font-weight: 600;
+		color: #fff;
+		order: 1;
+	}
+}
+
+.form-buttom {
+	text-align: center;
+	.confirm-btn-wrap {
+		width: 322px;
+		height: 60px;
+		margin: 80px auto 0;
+		position: relative;
+	}
+	.confirm-btn {
+		background-color: #BABABA;
+		border: 3px solid #4E6491;
+		border-radius: 30px;
+		width: 100%;
+		height: 60px;
+		color: #4E6491;
+		font-size: 1.6rem;
+		font-weight: 600;
+		max-width: 322px;
+		-webkit-transition: all 0.2s;
+		transition: all 0.2s;
+		&.is-active {
+			background-color: #fff;
+			cursor: pointer;
+			&:hover {
+				color: #fff;
+				background-color: #4E6491;
+			}
+		}
+	}
+	.return-btn {
+		margin: 33px auto 74px;
+		background-color: #fff;
+		max-width: 320px;
+		width: 100%;
+		border-radius: 31px;
+		height: 62px;
+		position: relative;
+		cursor: pointer;
+		border: 1px solid #707070;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		a{
+			font-size: 1.6rem;
+			font-weight: 600;
+			color: #1B1B1B;
+			cursor: pointer;
+			display: inline-block;
+		}
+	}
+}
+
+.contact-bottom {
+	background-color: #4E6491;
+	color: #fff;
+	padding: 40px 5%;
+	.contact-bottom-box1 {
+		display: flex;
+		justify-content: space-between;
+		max-width: 1088px;
+		margin: auto;
+		padding-bottom: 40px;
+		border-bottom: 1px solid #fff;
+		margin-bottom: 40px;
+		.left {
+				font-family: "BIZ UDPMincho";
+				font-size: 2rem;
+				line-height: 3.2rem;
+				padding-top: 20px;
+		}
+		.right {
+			.tel-box-text1 {
+				font-size: 2.1rem;
+				margin-bottom: 5px;
+				text-align: right;
+			}
+			.tel-box-link {
+				font-size: 7.5rem;
+				font-weight: bold;
+				margin-bottom: 6px;
+				position: relative;
+				display: flex;
+				align-items: center;
+				color: #fff;
+				&::before {
+					content: "";
+					background-image: url(../img/common/tel-box-link-icon-contact.png);
+					background-size: cover;
+					width: 77px;
+					height: 44px;
+					display: inline-block;
+					margin-right: 13px;
+					margin-top: 3px;
+				}
+			}
+		}
+	}
+	.contact-bottom-box2 {
+		max-width: 1088px;
+		margin: auto;
+		p {
+			font-size: 1.6rem;
+			margin-bottom: 10px;
+		}
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			li {
+				width: 25%;
+				font-size: 1.6rem;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+.contact-bottom2 {
+	max-width: 1088px;
+	margin: auto;
+	padding: 35px 0;
+	p {
+		font-size: 1.6rem;
+		line-height: 2.8rem;
+		margin-bottom: 5px;
+	}
+	ul {
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 5px;
+		li {
+			font-size: 1.6rem;
+			line-height: 2.8rem;
+			margin-right: 30px;
+		}
+	}
+}
+
+
+@media (max-width: 750px) {
+	.contact {
+		.contact-wrap {
+			background-color: #F0F0F0;
+		}
+		.contact-inner {
+			max-width: 100%;
+			padding: 45px 5% 40px;
+			margin: auto;
+			.contact-lead {
+				font-size: 1.6rem;
+				line-height: 2.8rem;
+				margin: 0 auto 50px;
+				text-align: left;
+			}
+
+			.contact-thanks1 {
+				font-size: 1.8rem;
+				font-weight: bold;
+				text-align: center;
+				margin-bottom: 30px;
+			}
+			.contact-thanks2 {
+				font-size: 1.6rem;
+				line-height: 2.8rem;
+				text-align: justify;
+				margin-bottom: 30px;
+			}
+
+			.thanks-btn {
+				background-color: #fff;
+				border: 3px solid #4E6491;
+				border-radius: 30px;
+				width: 322px;
+				height: 60px;
+				color: #4E6491;
+				font-size: 1.6rem;
+				font-weight: 600;
+				max-width: 322px;
+				transition: all 0.2s;
+				margin: auto;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				&:hover {
+					color: #fff;
+					background-color: #4E6491;
+					cursor: pointer;
+				}
+			}
+
+			.error-message {
+				border: 3px solid #C1272D;
+				background-color: #FCDEDD;
+				font-size: 1.6rem;
+				font-weight: bold;
+				line-height: 2.6rem;
+				color: #C1272D;
+				text-align: center;
+				padding: 12px 20px 20px;
+				span {
+					&::before {
+						content: "";
+						background-image:url(../img/common/error-message-icon.png);
+						background-size: 35px 30px;
+						background-repeat: no-repeat;
+						width: 35px;
+						height: 30px;
+						display: block;
+						margin:0 auto 10px;
+					}
+				}
+			}
+		}
+	}
+
+
+	  .contact-form {
+		margin-top: 56px;
+		.form-block {
+			border-top: 1px solid #A2A2A2;
+			width: 100%;
+			display: block;
+			box-sizing: border-box;
+			padding: 0;
+			&.required {
+				.form-label {
+					&:after {
+						position: absolute;
+						right: 0;
+						top: 50%;
+						transform: translateY(-50%);
+						content: "必須";
+						padding: 5px 7px;
+						margin: auto;
+						font-size: 1.6rem;
+						font-weight: 700;
+						line-height: 1;
+					}
+				}
+
+			}
+			&.last-type {
+				border-bottom: 1px solid #A2A2A2;
+			}
+			&.top {
+				align-items: flex-start;
+				.form-label {
+					padding-top: 20px;
+					padding-bottom: 15px;
+					&:after {
+						top: 50%;
+					}
+				}
+			}
+			.form-label {
+				position: relative;
+				font-size: 1.6rem;
+				padding-top: 20px;
+				padding-bottom: 10px;
+				padding-left: 0;
+				word-break: break-all;
+				display: flex;
+				align-items: center;
+				width: 100%;
+				vertical-align: middle;
+				box-sizing: border-box;
+				label{
+					font-weight: bold;
+				}
+			}
+			.form-input {
+				font-size: 1.6rem;
+				word-break: break-all;
+				display: block;
+				width: 100%;
+				vertical-align: top;
+				box-sizing: border-box;
+				padding: 0;
+				input {
+					width: 100%;
+					border: 0;
+					border: 1px solid #A2A2A2;
+					background: #fff;
+					padding: 20px 20px;
+					border-radius: 4px;
+					margin-bottom: 5px;
+					&::placeholder {
+						color: #A2A2A2;
+					}
+				}
+			}
+
+			// ラジオボタン //
+			.m-form-radio-wrap {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				padding: 17px 0 20px 0;
+			}
+			.m-form-radio{
+				width: 40%;
+				margin-bottom: 30px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				input {
+					position: absolute;
+					white-space: nowrap;
+					width: 1px;
+					height: 1px;
+					overflow: hidden;
+					border: 0;
+					padding: 0;
+					clip: rect(0 0 0 0);
+					clip-path: inset(50%);
+					margin: -1px;
+				}
+			}
+
+			.textarea-box textarea {
+				width: 99%;
+				border: 0;
+				height: calc( 1.3em * 8 );
+				line-height: 1.3;
+				font-size: 1.6rem;
+				border: 1px solid #A2A2A2;
+				background: #fff;
+				padding: 18px 20px;
+				border-radius: 4px;
+				margin-bottom: 10px;
+			}
+		}
+		// チェックボックス //
+
+		.m-form-checkbox-wrap {
+			display: flex;
+			justify-content: space-between;
+		}
+		.m-form-checkbox{
+			width: 100%;
+			text-align: center;
+			margin: 40px auto 0;
+			padding: 30px 10px;
+			input {
+				position: absolute;
+				white-space: nowrap;
+				width: 1px;
+				height: 1px;
+				overflow: hidden;
+				border: 0;
+				padding: 0;
+				clip: rect(0 0 0 0);
+				clip-path: inset(50%);
+				margin: -1px;
+			}
+		}
+
+		.m-form-checkbox-name {
+			cursor: pointer;
+			display: inline-flex;
+			align-items: center;
+			color: #333333;
+			position: relative;
+			font-size: 1.6rem;
+			font-weight: bold;
+			&:before {
+				content: "";
+				display: inline-block;
+				width: 14px;
+				height: 14px;
+				border: 1px solid #333333;
+				border-radius: 3px;
+				margin-right: 8px;
+				flex-shrink: 0;
+			}
+		}
+		
+		.m-form-checkbox input:checked + .m-form-checkbox-name:before {
+			border: 1px solid #333;
+			background-color: #fff;
+		}
+		
+		.m-form-checkbox input:checked + .m-form-checkbox-name:after {
+			content: "";
+			position: absolute;
+			border: solid #333;
+			border-width: 0 2px 2px 0;
+			left: 0.3em;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			width: 0.4em;
+			height: 0.6em;
+			transform: translateY(-2px) rotate(45deg);
+		}
+		
+		.m-form-checkbox input:focus-visible + .m-form-checkbox-name .m-form-checkbox-text {
+			background: linear-gradient(transparent 90%, rgba(33, 150, 243, 0.3) 90%);
+		}
+		
+		.m-form-checkbox input.focus-visible + .m-form-checkbox-name .m-form-checkbox-text {
+			background: linear-gradient(transparent 90%, rgba(33, 150, 243, 0.3) 90%);
+		}
+
+		// エラー表示 //
+		.form-error {
+			.form-input{
+				input {
+					background-color: #FCDEDD;
+					border: 1px solid #C1272D;
+				}
+			}
+			.textarea-box{
+				textarea {
+					background-color: #FCDEDD;
+					border: 1px solid #C1272D;
+				}
+			}
+		}
+
+				// フォーム確認 //
+				.form-input-verification{
+					font-size: 1.6rem;
+					line-height: 2.8rem;
+					padding: 20px 35px 35px 35px;
+					width: 100%;
+				}
+	  }
+
+
+	  p.error, span.error {
+		font-size: 1.5rem;
+		margin-bottom: 10px;
+		padding: 0%;
+		display: inline-block;
+		color: #C1272D;
+	  }
+	  .form-input-radio {
+		padding-bottom: 2%;
+		width: 70%;
+		padding-left: 5%;
+		padding-top: 18px;
+		padding-bottom: 18px;
+		display: flex;
+		align-items: center;
+	  }
+	  .form-input-radio-item {
+		display: inline-block;
+		margin-right: 15px;
+		label{
+			display: inline-block;
+			font-size: 1.6rem;
+			width: 100%;
+		}
+		input{
+			display: inline-block;
+		}
+		span{
+			display: inline-block;
+		}
+	  }
+
+	  .form-buttom {
+		text-align: center;
+		.confirm-btn-wrap {
+			width: 322px;
+			height: 60px;
+			margin: 60px auto 0;
+			position: relative;
+		}
+		.confirm-btn {			
+			margin: 0 auto 0;
+			width: 100%;
+			height: 60px;
+			font-size: 1.6rem;
+			font-weight: 600;
+			max-width: 100%;
+			-webkit-transition: all 0.2s;
+			transition: all 0.2s;
+			position: relative;
+		}
+		.return-btn {
+			margin: 33px auto 74px;
+			background-color: #fff;
+			max-width: 320px;
+			width: 100%;
+			border-radius: 31px;
+			height: 62px;
+			position: relative;
+			cursor: pointer;
+			border: 1px solid #707070;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			a{
+				font-size: 1.6rem;
+				font-weight: 600;
+				color: #1B1B1B;
+				cursor: pointer;
+				display: inline-block;
+			}
+		}
+	  }
+	  
+	  .form-buttom-flex {
+		display: block;
+		justify-content: space-between;
+		max-width: 322px;
+		margin: 60px auto 0;
+		.entry {
+			background-color: #fff;
+			border: 3px solid #4E6491;
+			border-radius: 30px;
+			width: 100%;
+			height: 60px;
+			color: #4E6491;
+			font-size: 1.6rem;
+			font-weight: 600;
+			max-width: 100%;
+			-webkit-transition: all 0.2s;
+			transition: all 0.2s;
+			order: 2;
+			margin-bottom: 20px;
+			&:hover {
+				color: #fff;
+				background-color: #4E6491;
+				cursor: pointer;
+			}
+		}
+		.return {
+			background-color: #A2A2A2;
+			max-width: 100%;
+			width: 100%;
+			border-radius: 30px;
+			height: 60px;
+			position: relative;
+			cursor: pointer;
+			border: 1px solid #707070;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 1.6rem;
+			font-weight: 600;
+			color: #fff;
+			order: 1;
+		}
+	}
+
+	  .contact-bottom {
+		background-color: #4E6491;
+		color: #fff;
+		padding: 40px 5%;
+		.contact-bottom-box1 {
+			display: block;
+			max-width: 100%;
+			margin: auto;
+			padding-bottom: 40px;
+			border-bottom: 1px solid #fff;
+			margin-bottom: 40px;
+			.left {
+					font-family: "BIZ UDPMincho";
+					font-size: 1.8rem;
+					line-height: 3rem;
+					padding-top: 0;
+			}
+			.right {
+				.tel-box-text1 {
+					font-size: 1.2rem;
+					margin-bottom: 2px;
+					text-align: right;
+				}
+				.tel-box-link {
+					font-size: 4.5rem;
+					font-weight: bold;
+					margin-bottom: 6px;
+					position: relative;
+					display: flex;
+					align-items: center;
+					color: #fff;
+					&::before {
+						content: "";
+						background-image: url(../img/common/tel-box-link-icon-contact.png);
+						background-size: cover;
+						width: 43px;
+						height: 25px;
+						display: inline-block;
+						margin-right: 10px;
+						margin-top: 3px;
+					}
+				}
+			}
+		}
+		.contact-bottom-box2 {
+			max-width: 100%;
+			margin: auto;
+			p {
+				font-size: 1.6rem;
+				line-height: 2.8rem;
+				margin-bottom: 5px;
+			}
+			ul {
+				display: block;
+				li {
+					width: 100%;
+					font-size: 1.6rem;
+					line-height: 2.8rem;
+					margin-bottom: 5px;
+				}
+			}
+		}
+	}
+
+	.contact-bottom2 {
+		max-width: 100%;
+		margin: auto;
+		padding: 40px 5%;
+		p {
+			font-size: 1.6rem;
+			line-height: 2.8rem;
+			margin-bottom: 5px;
+		}
+		ul {
+			display: block;
+			margin-bottom: 5px;
+			li {
+				font-size: 1.6rem;
+				line-height: 2.8rem;
+				margin-right: 0;
+			}
+		}
+	}
+}

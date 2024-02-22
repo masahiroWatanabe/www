@@ -1,0 +1,672 @@
+
+/*==================================================================================
+　.mv
+==================================================================================*/
+
+.mv {
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	margin-bottom: 80px;
+	.mv-inner {
+		margin: auto;
+		padding: 0 0;
+		text-align: center;
+		position: relative;
+		h1 {
+			width: 18vw;
+			display: inline-block;
+
+			position: absolute;
+			top: 3.5vw;
+			left: 0;
+			right: 0;
+			margin: auto;
+
+			opacity: 0;
+			-moz-transition: -moz-transform 2s linear;
+			-webkit-transition: -webkit-transform 2s linear;
+			-o-transition: -o-transform 2s linear;
+			-ms-transition: -ms-transform 2s linear;
+			transition: transform 2s linear;
+			-webkit-animation-duration: 3s;
+			animation-duration: 3s;
+			-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
+
+			&.img-blur {
+				-webkit-animation-name: imageBlur;
+				animation-name: imageBlur;
+				opacity: 1;
+				transition: .6s;
+			}
+		}
+		.mv-bg {
+			img {
+				width: 100%;
+			}
+		}
+		@-webkit-keyframes imageBlur {
+			from {
+			opacity: 0;
+			-webkit-filter: blur(20px);
+			-moz-filter: blur(20px);
+			-ms-filter: blur(20px);
+			-o-filter: blur(20px);
+			filter: blur(20px);
+			}
+			
+			to {
+			opacity: 1;
+			-webkit-filter: blur(0px);
+			-moz-filter: blur(0px);
+			-ms-filter: blur(0px);
+			-o-filter: blur(0px);
+			filter: blur(0px);
+			}
+			}
+			@keyframes imageBlur {
+			from {
+			opacity: 0;
+			-webkit-filter: blur(20px);
+			-moz-filter: blur(20px);
+			-ms-filter: blur(20px);
+			-o-filter: blur(20px);
+			filter: blur(20px);
+			}
+			
+			  to {
+				  opacity: 1;
+				-webkit-filter: blur(0px);
+				-moz-filter: blur(0px);
+				-ms-filter: blur(0px);
+				-o-filter: blur(0px);
+				filter: blur(0px);
+			  }
+		}
+	}
+}
+
+
+@media (max-width: 768px) {
+
+	.mv {
+		background-color: #fff;
+		background-image:url(../img/index/mv-sp.png);
+		background-size:cover;
+		background-position:top center;
+		background-repeat: no-repeat;
+		width: 100%;
+		min-height: 100%;
+		height: 500px;
+		position: relative;
+		margin-bottom: 60px;
+		.mv-inner {
+			margin: auto;
+			padding: 55px 0 0;
+			text-align: center;
+			h1 {
+				width: 220px;
+				display: inline-block;
+				position: relative;
+			}
+			.mv-bg {
+				display: none;
+			}
+		}
+	}
+
+}
+
+
+/*==================================================================================
+　.index-01
+==================================================================================*/
+
+.index-01 {
+	position: relative;
+	margin-bottom: 120px;
+
+	.index-01-inner {
+		text-align: center;
+		max-width: 1088px;
+		margin: auto;
+		.index-h2 {
+			font-family: "BIZ UDPMincho";
+			font-size: 3.2rem;
+			font-weight: bold;
+			color: #102757;
+			margin-bottom: 20px;
+		}
+		.clm-2 {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-bottom: 16px;
+			.plan-box {
+				width: 49%;
+				background-color: #F8F4EC;
+				border-radius: 16px;
+				display: flex;
+				justify-content: space-between;
+				font-family: "BIZ UDPMincho";
+				text-align: left;
+				color: #102757;
+				margin-bottom: 16px;
+				.plan-box-left {
+					padding: 20px;
+					position: relative;
+					order: 1;
+					.text1 {
+						font-size: 2rem;
+						line-height: 3.2rem;
+						margin-bottom: 15px;
+					}
+					.text2 {
+						font-size: 3.2rem;
+						line-height: 2.2rem;
+						margin-bottom: 10px;
+						small {
+							font-size: 1.6rem;
+						}
+					}
+					.text3 {
+						font-size: 1.6rem;
+						margin-bottom: 5px;
+						strong {
+							font-size: 3rem;
+						}
+					}
+					.text4 {
+						font-size: 1.6rem;
+						text-align: right;
+						margin-bottom: 10px;
+						&.simple {
+							margin-right: 7px;
+						}
+						&.cremation {
+							margin-right: 2px;
+						}
+						&.oneDay {
+							margin-right: 0;
+						}
+						&.family {
+							margin-right: 0;
+						}
+					}
+					.common-btn {
+						position: absolute;
+						bottom: 13px;
+						left: 20px;
+					}
+				}
+				.plan-box-right {
+					width: 222px;
+					order: 2;
+					img {
+						width: 100%;
+						border-radius: 0 16px 16px 0;
+					}
+				}
+			}
+		}
+		.btn-center {
+			img {
+				width: 730px;
+				margin: auto;
+			}
+		}
+	}
+
+}
+
+
+@media (max-width: 768px) {
+
+	.index-01 {
+		position: relative;
+		margin-bottom: 45px;
+	
+		.index-01-inner {
+			text-align: center;
+			max-width: 100%;
+			margin: auto;
+			padding: 0 5%;
+			.index-h2 {
+				font-size: 2.8rem;
+				margin-bottom: 20px;
+			}
+			.clm-2 {
+				display: block;
+				margin-bottom: 0;
+				.plan-box {
+					width: 100%;
+					background-color: #F8F4EC;
+					border-radius: 16px;
+					display: block;
+					justify-content: space-between;
+					font-family: "BIZ UDPMincho";
+					text-align: left;
+					color: #102757;
+					margin-bottom: 10px;
+					.plan-box-left {
+						padding: 0 0 20px;
+						position: relative;
+						order: 1;
+						.plan-box-left-inner {
+							max-width: 204px;
+							margin: auto;
+						}
+						.text1 {
+							font-size: 1.8rem;
+							line-height: 2.8rem;
+							margin-bottom: 20px;
+						}
+						.text2 {
+							font-size: 2.8rem;
+							line-height: 2.2rem;
+							margin-bottom: 10px;
+							small {
+								font-size: 1.6rem;
+							}
+						}
+						.text3 {
+							font-size: 1.6rem;
+							margin-bottom: 5px;
+							strong {
+								font-size: 2.8rem;
+							}
+						}
+						.text4 {
+							font-size: 1.6rem;
+							text-align: right;
+							margin-bottom: 20px;
+							&.simple {
+								margin-right: 27px;
+							}
+							&.cremation {
+								margin-right: 10px;
+							}
+							&.oneDay {
+								margin-right: 6px;
+							}
+							&.family {
+								margin-right: 6px;
+							}
+						}
+						.common-btn {
+							position: relative;
+							bottom: auto;
+							left: auto;
+						}
+					}
+					.plan-box-right {
+						width: 100%;
+						order: 2;
+						margin-bottom: 17px;
+						img {
+							width: 100%;
+							border-radius: 16px 16px 0 0;
+						}
+					}
+				}
+			}
+			.btn-center {
+				img {
+					width: 730px;
+					margin: auto;
+				}
+			}
+		}
+	
+	}
+
+}
+
+
+/*==================================================================================
+　.index-02
+==================================================================================*/
+
+.index-02 {
+	position: relative;
+	margin-bottom: 120px;
+	.index-h2 {
+		font-family: "BIZ UDPMincho";
+		font-size: 3.2rem;
+		font-weight: bold;
+		color: #102757;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	.index-02-wrap {
+		position: relative;
+	}
+	.index-02-inner1 {
+		text-align: left;
+		margin: auto;
+		display: flex;
+		position: absolute;
+		z-index: 2;
+		max-width: 1088px;
+		left: 0;
+		right: 0;
+		.left {
+			width: 50%;
+			padding-top: 70px;
+			padding-right: 60px;
+			h3 {
+				font-size: 3.2rem;
+				font-family: "BIZ UDPMincho";
+				line-height: 4.8rem;
+				margin-bottom: 20px;
+			}
+			.text1 {
+				font-family: "BIZ UDPMincho";
+				font-size: 1.6rem;
+				line-height: 2.8rem;
+				margin-bottom: 40px;
+				letter-spacing: -.05em;
+			}
+		}
+		.right {
+			width: 50%;
+		}
+	}
+	.index-02-inner2 {
+		text-align: left;
+		margin: auto;
+		display: flex;
+		z-index: 1;
+		.left {
+			width: 50%;
+		}
+		.right {
+			width: 50%;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.index-02 {
+		position: relative;
+		margin-bottom: 60px;
+		.index-h2 {
+			font-size: 2.8rem;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		figure {
+			text-align: right;
+			margin-bottom: 20px;
+			img {
+				width: 95%;
+			}
+		}
+		.index-02-wrap {
+			background: none;
+			height: auto;
+		}
+		.index-02-inner1 {
+			max-width: 100%;
+			margin: auto;
+			padding: 0 5%;
+			display: block;
+			position: relative;
+			.left {
+				width: 100%;
+				padding-top: 0;
+				padding-right: 0;
+				h3 {
+					font-size: 2.8rem;
+					font-family: "BIZ UDPMincho";
+					line-height: 4.4rem;
+					margin-bottom: 20px;
+				}
+				.text1 {
+					font-size: 1.6rem;
+					line-height: 2.8rem;
+					margin-bottom: 40px;
+					letter-spacing: -.05em;
+				}
+				.common-btn.arrow {
+					width: 196px;
+					margin: auto;
+				}
+			}
+		}
+		.index-02-inner2 {
+			max-width: 100%;
+			margin: auto;
+			padding: 0 5%;
+			display: block;
+			position: relative;
+			.left {
+				width: 100%;
+				padding-top: 0;
+				padding-right: 0;
+				h3 {
+					font-size: 2.8rem;
+					font-family: "BIZ UDPMincho";
+					line-height: 4.4rem;
+					margin-bottom: 20px;
+				}
+				.text1 {
+					font-size: 1.6rem;
+					line-height: 2.8rem;
+					margin-bottom: 40px;
+					letter-spacing: -.05em;
+				}
+				.common-btn.arrow {
+					width: 196px;
+					margin: auto;
+				}
+			}
+			.right {
+				width: 100%;
+				display: none;
+			}
+		}
+	}
+}
+
+/*==================================================================================
+　.index-03
+==================================================================================*/
+
+.index-03 {
+	position: relative;
+	margin-bottom: 120px;
+	.index-03-inner {
+		max-width: 1088px;
+		margin: auto;
+		.bnr {
+			display: flex;
+			justify-content: space-between;
+			a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 536px;
+				height: 248px;
+				color: #fff;
+				font-family: "BIZ UDPMincho";
+				font-size: 3.2rem;
+				font-weight: bold;
+				&.bnr1 {
+					background-image: url(../img/index/index-03-bnr1.png);
+					background-size: cover;
+					&:hover {
+						background-image: url(../img/index/index-03-bnr1-on.png);
+					}
+				}
+				&.bnr2 {
+					background-image: url(../img/index/index-03-bnr3.png);
+					background-size: cover;
+					&:hover {
+						background-image: url(../img/index/index-03-bnr3-on.png);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.index-03 {
+		position: relative;
+		margin-bottom: 50px;
+		.index-03-inner {
+			max-width: 100%;
+			margin: auto;
+			padding: 0 5%;
+			.bnr {
+				display: block;
+				a {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 100%;
+					max-width: 327px;
+					height: 151px;
+					margin: 0 auto 10px;
+					color: #fff;
+					font-family: "BIZ UDPMincho";
+					font-size: 2.8rem;
+					font-weight: bold;
+					&.bnr1 {
+						background-image: url(../img/index/index-03-bnr1.png);
+						background-size: cover;
+					}
+					&.bnr2 {
+						background-image: url(../img/index/index-03-bnr3.png);
+						background-size: cover;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*==================================================================================
+　.index-04
+==================================================================================*/
+
+.index-04 {
+	position: relative;
+	background-image: url(../img/index/index-03-bg.png);
+	background-size: cover;
+	.index-04-inner {
+		padding: 65px 5%;
+		p {
+			font-family: "BIZ UDPMincho";
+			font-size: 2rem;
+			margin-bottom: 15px;
+			color: #102757;
+			text-align: center;
+		}
+		.index-h2 {
+			text-align: center;
+			a {
+				font-family: "BIZ UDPMincho";
+				font-size: 3.2rem;
+				font-weight: bold;
+				color: #102757;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				position: relative;
+				&::after {
+					content: "";
+					background-image: url(../img/common/common-btn-arrow.png);
+					background-size: 16px;
+					background-color: #fff;
+					background-repeat: no-repeat;
+					background-position: center;
+					width: 72px;
+					height: 72px;	
+					border-radius: 50%;
+					border: 1px solid #102757;
+					display: inline-block;
+					margin-left: 18px;
+				}
+				&:hover {
+					&:after {
+						background-image: url(../img/common/common-btn-arrow-on.png);
+						background-size: 16px;
+						background-color: #102757;
+						background-repeat: no-repeat;
+						background-position: center;
+						width: 72px;
+						height: 72px;	
+						border-radius: 50%;
+						border: 1px solid #102757;
+						display: inline-block;
+						margin-left: 18px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.index-04 {
+		position: relative;
+		background-image: url(../img/index/index-03-bg-sp.png);
+		background-size: cover;
+		.index-04-inner {
+			padding: 25px 5%;
+			p {
+				font-size: 1.8rem;
+				line-height: 3rem;
+				margin-bottom: 15px;
+				color: #102757;
+				text-align: center;
+			}
+			.index-h2 {
+				font-family: "BIZ UDPMincho";
+				font-size:2.8rem;
+				text-align: center;
+				color: #102757;
+				a {
+					display: block;
+					position: relative;
+					&::after {
+						content: "";
+						background-image: url(../img/common/common-btn-arrow.png);
+						background-size: 16px;
+						background-color: #fff;
+						background-repeat: no-repeat;
+						background-position: center;
+						width: 72px;
+						height: 72px;	
+						border-radius: 50%;
+						border: 1px solid #102757;
+						display: block;
+						margin: 20px auto 0;
+					}
+					&:hover {
+						&:after {
+							background-image: url(../img/common/common-btn-arrow.png);
+							background-size: 16px;
+							background-color: #fff;
+							background-repeat: no-repeat;
+							background-position: center;
+							width: 72px;
+							height: 72px;	
+							border-radius: 50%;
+							border: 1px solid #102757;
+							display: block;
+							margin: 20px auto 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}

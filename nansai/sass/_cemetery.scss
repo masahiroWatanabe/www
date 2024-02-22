@@ -1,0 +1,243 @@
+
+/*==================================================================================
+　.cemetery-mv
+==================================================================================*/
+
+.cemetery-mv {
+    margin: 80px auto 30px;
+    .sp-title {
+        display: none;
+    }
+    .cemetery-mv-inner {
+        display: flex;
+        .left {
+            width: 44%;
+            font-family: "BIZ UDPMincho";
+            padding-left: 12vw;
+            padding-right: 50px;
+            padding-top: 48px;
+            order: 1;
+            position: relative;
+            .text1 {
+                font-size: 7.2rem;
+                line-height: 8.8rem;
+                margin-bottom: 20px;
+                color: #102757;
+                small {
+                    font-size: 4rem;
+                }
+            }
+            .text4 {
+                font-size: 2rem;
+                line-height: 3.2rem;
+            }
+            .note {
+                font-size: 1.6rem;
+                line-height: 2.8rem;
+                color: #C40000;
+                position: absolute;
+                left: 12vw;
+                bottom: 0;
+                padding-right: 3.5vw;
+            }
+        }
+        .right {
+            width: 56vw;
+            order: 2;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .cemetery-mv {
+        margin: 55px auto 25px;
+        .sp-title {
+            display: block;
+            margin-left: 5%;
+            margin-bottom: 20px;
+        }
+        .cemetery-mv-inner {
+            display: block;
+            padding: 0 5%;
+            .left {
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: 0;
+                .text1 {
+                    font-size: 5.6rem;
+                    line-height: 7rem;
+                    margin-bottom: 10px;
+                    small {
+                        font-size: 3rem;
+                    }
+                }
+                .text4 {
+                    font-size: 1.8rem;
+                    line-height: 2.8rem;
+                    margin-bottom: 20px;
+                }
+                .note {
+                    font-size: 1.6rem;
+                    line-height: 2.8rem;
+                    color: #C40000;
+                    position: relative;
+                    left: auto;
+                    bottom: auto;
+                    padding-right: 0;
+                }
+            }
+            .right {
+                display: none;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+}
+
+
+/*==================================================================================
+　.cemetery-01
+==================================================================================*/
+
+.cemetery-01 {
+    margin-bottom: 0;    
+    .cemetery-01-inner {
+        background-color:#4E6491;
+        border-radius: 16px 16px 0 0;
+        max-width: 1088px;
+        margin: auto;
+        padding: 20px;
+        p {
+            font-size: 1.6rem;
+            line-height: 2.8rem;
+            color: #fff;
+            margin-bottom: 25px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .cemetery-01 {
+        margin-bottom: 0;  
+        padding: 0 5%;  
+        .cemetery-01-inner {
+            background-color:#4E6491;
+            border-radius: 16px 16px 0 0;
+            max-width: 100%;
+            margin: auto;
+            padding: 20px;
+            p {
+                font-size: 1.6rem;
+                line-height: 2.8rem;
+                color: #fff;
+                margin-bottom: 25px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+
+/*==================================================================================
+　.cemetery-02
+==================================================================================*/
+
+.cemetery-02 {
+    background-color:#F8F4EC;
+    margin-bottom: 0;
+    padding: 60px 5% 1px;
+    .cemetery-02-inner {
+        max-width: 1088px;
+        margin: auto;
+        padding: 0 0 0 50px;
+        h2 {
+            font-family: "BIZ UDPMincho";
+            font-size: 3.2rem;
+            color: #102757;
+            margin-bottom: 40px;
+            position: relative;
+            text-align: left;
+            &::before {
+                content: "";
+                display: block;
+                width:32px;
+                height: 4px;
+                background-color: #4E6491;
+                position: absolute;
+                left: -49px;
+                top: 13px;
+            }
+        }
+        .img {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            figure {
+                width: 49.2%;
+                margin-bottom: 15px;
+            }
+        }
+        .text {
+            font-size: 1.6rem;
+            line-height: 2.8rem;
+            margin-bottom: 80px;
+            margin-top: 15px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .cemetery-02 {
+        background-color:#F8F4EC;
+        margin-bottom: 0;
+        padding: 60px 5% 1px;
+        .cemetery-02-inner {
+            max-width: 100%;
+            margin: auto;
+            padding: 0 0 0 35px;
+            h2 {
+                font-family: "BIZ UDPMincho";
+                font-size: 2.8rem;
+                line-height: 4.4rem;
+                color: #102757;
+                margin-bottom:25px;
+                position: relative;
+                text-align: left;
+                &::before {
+                    content: "";
+                    display: block;
+                    width:20px;
+                    height: 4px;
+                    background-color: #4E6491;
+                    position: absolute;
+                    left: -35px;
+                    top: 19px;
+                }
+            }
+            .img {
+                display: block;
+                figure {
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
+            }
+            .text {
+                font-size: 1.6rem;
+                line-height: 2.8rem;
+                margin-bottom: 60px;
+                margin-top: 15px;
+            }
+        }
+    }
+}
