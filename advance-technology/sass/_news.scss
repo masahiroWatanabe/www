@@ -1,0 +1,441 @@
+/*==================================================================================
+　メインビジュアル
+==================================================================================*/
+
+.news {
+    padding-top: 80px;
+}
+
+.news-main {
+    position: relative;
+    .news-mv {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 700px;
+    }
+    .news-inner {
+        max-width: 1120px;
+        margin: auto;
+        padding-top: 50px;
+        padding-bottom: 220px;
+        h1 {
+            font-size: 7rem;
+            font-weight: 500;
+            font-family: "Rajdhani";
+            color: #14116E;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 2.4rem;
+            font-weight: bold;
+        }
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .news {
+        padding-top: 60px;
+    }
+    
+    .news-main {
+        position: relative;
+        .news-mv {
+            position: static;
+            right: auto;
+            top: auto;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        .news-inner {
+            max-width: 100%;
+            margin: auto;
+            padding:0 5% 20px;
+            h1 {
+                font-size: 3rem;
+                font-weight: 500;
+                font-family: "Rajdhani";
+                color: #14116E;
+                margin-bottom: 10px;
+            }
+            h2 {
+                font-size: 1.6rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+/*==================================================================================
+    news-list
+==================================================================================*/
+
+.news-list {
+    .news-list-inner {
+        max-width: 905px;
+        margin: auto;
+        dl {
+            padding-bottom: 18px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #CECECE;
+            a {
+                display: flex;
+                align-items: flex-start;
+                dt {
+                    font-family: "Rajdhani";
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    line-height: 3rem;
+                    color: #14116E;
+                    margin-right: 40px;
+                }
+                dd {
+                    font-size: 1.4rem;
+                    line-height: 3rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .news-list {
+        .news-list-inner {
+            max-width: 100%;
+            margin: auto;
+            padding: 0 5%;
+            dl {
+                padding-bottom: 18px;
+                margin-bottom: 25px;
+                border-bottom: 1px solid #CECECE;
+                a {
+                    display: block;
+                    dt {
+                        font-family: "Rajdhani";
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        line-height: 3rem;
+                        color: #14116E;
+                        margin-right: 0;
+                        margin-bottom: 5px;
+                    }
+                    dd {
+                        font-size: 1.4rem;
+                        line-height: 2.4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*==================================================================================
+    ページネーション
+==================================================================================*/
+
+// 真ん中に設置
+.pagination {
+    max-width: 1120px;
+    margin: 75px auto 0;
+    position: relative;
+}
+
+// 横並びにする
+.nav-links .page-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+// ページタブの共通スタイル
+
+.nav-links .current,
+.nav-links .dots {
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    line-height: 4.2rem;
+    background: #fff;
+    color: #1A1A1A;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-family: "Rajdhani";
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+// ページタブの共通スタイル
+.nav-links a.page-numbers{
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    line-height: 4.2rem;
+    background: #fff;
+    color: #1A1A1A;
+    margin-right: 15px;
+    font-family: "Rajdhani";
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+// ページタブの共通スタイル
+.nav-links a.prev,
+.nav-links a.next{
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    line-height: 4.2rem;
+    background: #fff;
+    color: #1A1A1A;
+    font-family: "Rajdhani";
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+// マウスが乗った時の、ボタンの背景の色と文字の色
+.nav-links a.page-numbers:hover {
+    color: #FFF;
+    background-color: #14116E;
+    border-color: #14116E;
+    border-radius: 50%;
+}
+
+// 現在のページのタブ 
+.nav-links .current {
+    background: #14116E;
+    color: #FFFFFF;
+    padding: 0;
+}
+
+/* 前への「＜」、次への「＞」 */
+.nav-links a.next {
+    content: "";
+    background: url(../img/common/next.png);
+    background-size: cover;
+    width: 33px;
+    height: 21px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 11px;
+}
+.nav-links a.prev{
+    content: "";
+    background: url(../img/common/prev.png);
+    background-size: cover;
+    width: 33px;
+    height: 21px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 11px;
+}
+
+// 縦線の共通CSS
+.nav-links .next::before,
+.nav-links .prev::after {
+    display: none;
+}
+
+// 数字省略の「・・・」
+.nav-links .dots {
+    background: transparent;
+    border: none;
+}
+
+
+@media (max-width: 1000px) {
+    
+ // 真ん中に設置
+.pagination {
+    max-width: 1120px;
+    margin: 75px auto 0;
+    position: relative;
+}
+
+// 横並びにする
+.nav-links .page-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+// ページタブの共通スタイル
+
+.nav-links .current,
+.nav-links .dots {
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    line-height: 4.2rem;
+    background: #fff;
+    color: #1A1A1A;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-family: "Rajdhani";
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+// ページタブの共通スタイル
+.nav-links a.page-numbers{
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    line-height: 4.2rem;
+    background: #fff;
+    color: #1A1A1A;
+    margin-right: 15px;
+    font-family: "Rajdhani";
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+// ページタブの共通スタイル
+.nav-links a.prev,
+.nav-links a.next{
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    line-height: 4.2rem;
+    background: #fff;
+    color: #1A1A1A;
+    font-family: "Rajdhani";
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+// マウスが乗った時の、ボタンの背景の色と文字の色
+.nav-links a.page-numbers:hover {
+    color: #FFF;
+    background-color: #14116E;
+    border-color: #14116E;
+    border-radius: 50%;
+}
+
+// 現在のページのタブ 
+.nav-links .current {
+    background: #14116E;
+    color: #FFFFFF;
+    padding: 0;
+}
+
+/* 前への「＜」、次への「＞」 */
+.nav-links a.next {
+    content: "";
+    background: url(../img/common/next.png);
+    background-size: cover;
+    width: 33px;
+    height: 21px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 11px;
+}
+.nav-links a.prev{
+    content: "";
+    background: url(../img/common/prev.png);
+    background-size: cover;
+    width: 33px;
+    height: 21px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 11px;
+}
+
+// 縦線の共通CSS
+.nav-links .next::before,
+.nav-links .prev::after {
+    display: none;
+}
+
+// 数字省略の「・・・」
+.nav-links .dots {
+    background: transparent;
+    border: none;
+}
+}
+
+
+/*==================================================================================
+    app-section-03
+==================================================================================*/
+
+.news-section-03 {
+    padding: 0 5%;
+    .news-section-03-inner {
+        padding: 100px 0 0;
+        max-width: 1120px;
+        margin: auto;
+        .common-h3 {
+            margin-bottom: 25px;
+        }
+        .common-text {
+            margin-left: 43px;
+            line-height: 3.2rem;
+        }
+        .btn-top-text {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 30px;
+        }
+        .common-btn {
+            a {
+                width: 350px;
+                height: 65px;
+                margin: auto;
+                &::after {
+                    top: 32px;
+                }
+                &:hover {
+                    &::after {
+                        top: 29px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .news-section-03 {
+        padding: 0 5%;
+        .news-section-03-inner {
+            padding: 50px 0 0;
+            max-width: 100%;
+            margin: auto;
+            .common-h3 {
+                margin-bottom: 15px;
+            }
+            .common-text {
+                margin-left: 0;
+                line-height: 2.4rem;
+            }
+            .btn-top-text {
+                font-size: 1.6rem;
+                font-weight: bold;
+                text-align: center;
+                margin-top: 50px;
+                margin-bottom: 20px;
+            }
+            .common-btn {
+                a {
+                    width: 100%;
+                    max-width: 350px;
+                    height: 60px;
+                    margin: auto;
+                    &::after {
+                        top: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

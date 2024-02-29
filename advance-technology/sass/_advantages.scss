@@ -1,0 +1,145 @@
+/*==================================================================================
+　メインビジュアル
+==================================================================================*/
+
+.advantages {
+    padding-top: 80px;
+}
+
+.advantages-main {
+    position: relative;
+    .advantages-mv {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 710px;
+    }
+    .advantages-inner {
+        max-width: 1120px;
+        margin: auto;
+        padding-bottom: 120px;
+        padding-top: 50px;
+        h1 {
+            font-size: 7rem;
+            font-weight: 500;
+            font-family: "Rajdhani";
+            color: #14116E;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 2.4rem;
+            font-weight: bold;
+        }
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .advantages {
+        padding-top: 60px;
+    }
+    
+    .advantages-main {
+        position: relative;
+        .advantages-mv {
+            position: static;
+            right: auto;
+            top: auto;
+            width: 100%;
+        }
+        .advantages-inner {
+            max-width: 100%;
+            margin: auto;
+            padding:0 5% 50px;
+            h1 {
+                font-size: 3rem;
+                font-weight: 500;
+                font-family: "Rajdhani";
+                color: #14116E;
+                margin-bottom: 10px;
+            }
+            h2 {
+                font-size: 1.6rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+/*==================================================================================
+　advantages-section
+==================================================================================*/
+
+.advantages-section {
+    .advantages-section-inner {
+        max-width: 1120px;
+        margin: auto;
+        padding-top: 115px;
+        .box {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 80px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .left {
+                width: 500px;
+                order: 1;
+            }
+            .right {
+                width: 560px;
+                order: 2;
+            }
+            h4 {
+                font-size: 2rem;
+                font-weight: bold;
+                margin-bottom: 20px;
+                span {
+                    font-size: 2.4rem;
+                    font-weight: 500;
+                    color: #14116E;
+                    display: inline-block;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .advantages-section {
+        .advantages-section-inner {
+            max-width: 100%;
+            margin: auto;
+            padding: 50px 5% 0;
+            .box {
+                display: block;
+                margin-bottom: 40px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .left {
+                    width: 100%;
+                    orphans: 1;
+                }
+                .right {
+                    width: 100%;
+                    orphans: 2;
+                    margin-bottom: 15px;
+                }
+                h4 {
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    margin-bottom: 15px;
+                    span {
+                        font-size: 2rem;
+                        font-weight: 500;
+                        color: #14116E;
+                        display: inline-block;
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
