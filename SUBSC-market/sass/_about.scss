@@ -1,0 +1,255 @@
+
+
+/*==================================================================================
+　about-lead
+==================================================================================*/
+
+.about-lead {
+    padding: 180px 0 0;
+    margin-bottom: 8vw;
+	.about-lead-inner {
+        max-width: 1046px;
+        margin: auto;
+        .about-lead-h3 {
+            color: #000;
+            text-align: center;
+            font-family: "Montserrat";
+            font-size: 5rem;
+            font-weight: bold;
+            letter-spacing: .03em;
+            margin-bottom: 90px;
+            span {
+                display: inline-block;
+                position: relative;
+                &:after {
+                    content: "";
+                    width: 100px;
+                    height: 2px;
+                    background-color: #AD0707;
+                    position: absolute;
+                    bottom: -32px;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                }
+            }
+        }
+        .about-catch {
+            font-size: 4.2rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .about-lead-text {
+            font-size: 1.6rem;
+            font-weight: bold;
+            line-height: 4rem;
+            text-align: center;
+            margin-bottom: 210px;
+            &.mb60 {
+                margin-bottom: 60px;
+            }
+            &.mb160 {
+                margin-bottom: 160px;
+            }
+            &.mb200 {
+                margin-bottom: 200px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 750px) {
+    .about-lead {
+        padding: 65px 0 0;
+        margin-bottom: 0;
+        .about-lead-inner {
+            max-width:100%;
+            margin: auto;
+            padding: 0 5%;
+            .about-lead-h3 {
+                color: #333333;
+                text-align: center;
+                font-family: "Montserrat";
+                font-size: 2.6rem;
+                font-weight: bold;
+                margin-bottom: 80px;
+            }
+            .about-catch {
+                font-size: 2rem;
+                line-height: 2.7rem;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 60px;
+            }
+            .about-lead-text {
+                font-size: 1.6rem;
+                font-weight: normal;
+                line-height: 3rem;
+                text-align: left;
+                margin-bottom: 120px;
+                &.mb60 {
+                    margin-bottom: 5vh;
+                }
+                &.mb160 {
+                    margin-bottom: 13vh;
+                }
+                &.mb200 {
+                    margin-bottom: 13vh;
+                }
+            }
+        }
+    }
+}
+
+/*==================================================================================
+　about-melit
+==================================================================================*/
+
+.about-melit {
+    .about-melit-h3 {
+        background: url(../img/about/about-melit-bg.png) no-repeat;
+        background-size: 100%;
+        padding: 10vw 5% 10vw;
+        margin-bottom: 20vw;
+        h3 {
+            font-family: "Montserrat";
+            font-size: 5rem;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 35px;
+            text-align: center;
+        }
+        .about-melit-sub {
+            font-size: 2.4rem;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+        }
+    }
+
+    .about-content {
+        max-width: 1046px;
+        margin:auto;
+        .about-left {
+            width: 41%;
+        }
+        .about-right {
+            width: 41%;
+        }
+        .pc-order-1 {
+            order: 1;
+        }
+        .pc-order-2 {
+            order: 2;
+        }
+        .about-melit-1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 18vw;
+        }
+        .about-melit-2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 18vw;
+        }
+        .about-melit-3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 30vw;
+        }
+        .about-melit-h4 {
+            font-family: "Montserrat";
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .about-melit-title {
+            font-size: 2.8rem;
+            font-weight: bold;
+            margin-bottom: 50px;
+        }
+        .about-melit-text {
+            font-size: 1.6rem;
+            line-height: 4rem;
+        }
+    }
+}
+
+
+@media (max-width: 750px) {
+    .about-melit {
+        .about-melit-h3 {
+            background: url(../img/about/about-melit-bg-sp.png) no-repeat;
+            background-size: cover;
+            padding: 10vw 5% 10vw;
+            margin-bottom: 20vw;
+            h3 {
+                font-family: "Montserrat";
+                font-size: 3rem;
+                font-weight: bold;
+                color: #fff;
+                margin-bottom: 3vh;
+                text-align: center;
+            }
+            .about-melit-sub {
+                font-size: 1.8rem;
+                line-height: 2.4rem;
+                font-weight: bold;
+                color: #fff;
+                text-align: center;
+            }
+        }
+    
+        .about-content {
+            max-width: 100%;
+            margin:auto;
+            padding: 0 5%;
+            .about-left {
+                width: 100%;
+                margin-bottom: 5vh;
+            }
+            .about-right {
+                width: 100%;
+                margin-bottom: 13vh;
+            }
+            .about-melit-1 {
+                display: block;
+                margin-bottom: 18vw;
+            }
+            .about-melit-2 {
+                display: block;
+                margin-bottom: 18vw;
+            }
+            .about-melit-3 {
+                display: block;
+                margin-bottom: 30vw;
+            }
+            .about-melit-h4 {
+                font-family: "Montserrat";
+                font-size: 2rem;
+                font-weight: bold;
+                margin-bottom: 2vh;
+            }
+            .about-melit-title {
+                font-size: 2rem;
+                font-weight: bold;
+                margin-bottom: 3vh;
+            }
+            .about-melit-text {
+                font-size: 1.6rem;
+                line-height: 2.8rem;
+            }
+            .about-melit-img {
+                width: 90%;
+                margin: auto;
+                text-align: center;
+                display: block;
+            }
+        }
+    }
+}

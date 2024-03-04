@@ -1,0 +1,294 @@
+
+
+/*==================================================================================
+　service-box
+==================================================================================*/
+
+.service-inner {
+    padding: 180px 0 50px;
+    &.color-glay {
+        background-color: #F2F2F2;
+        padding: 160px 0 170px;
+        .common-h3 {
+            font-size: 3.6rem;
+        }
+    }
+    .service-section {
+        margin: 0 auto 100px;
+        max-width: 1046px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .service-sub {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .service-h3 {
+            margin-bottom: 50px;
+            text-align: center;
+            .service-h3-01 {
+                width: 484px;
+            }
+            .service-h3-02 {
+                width: 484px;
+            }
+            .service-h3-03 {
+                width: 374px;
+            }
+            .service-h3-04 {
+                width: 488px;
+            }
+        }
+        .service-lead {
+            font-size: 1.6rem;
+            line-height: 3.2rem;
+            margin-bottom: 65px;
+            text-align: left;
+        }
+        .img-center {
+            text-align: center;
+            margin-bottom: 135px;
+            img {
+                width: 730px;
+                margin: auto;
+            }
+        }
+        .secvice-box {
+            display: flex;
+            justify-content: space-between;
+            .secvice-box-left {
+                width: 48%;
+            }
+            .secvice-box-right {
+                width: 46%;
+            }
+            .order-1 {
+                order: 1;
+            }
+            .order-2 {
+                order: 2;
+            }
+            .secvice-box-h3 {
+                font-size: 2.8rem;
+                font-weight: bold;
+                color: #333;
+                margin-bottom: 40px;
+            }
+            .secvice-box-h4 {
+                font-size: 1.8rem;
+                font-weight: bold;
+                color: #EC5805;
+                margin-bottom: 25px;
+            }
+            .secvice-box-h4-2{
+                font-size: 2.4rem;
+                font-weight: bold;
+                color: #262525;
+                margin-bottom: 40px;
+            }
+            .secvice-box-text {
+                font-size: 1.6rem;
+                line-height: 3.2rem;
+                text-align: justify;
+            }
+            .secvice-box-logo {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                max-width: 305px;
+                margin-top: 25px;
+                figure {
+                    .secvice-box-logo-01 {
+                        width: 155px;
+                    }
+                    .secvice-box-logo-02 {
+                        width: 132px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.service-bottom-box {
+    max-width: 1046px;
+    margin: 95px auto 200px;
+    background-color: #F2F2F2;
+    .service-bottom-box-inner {
+        padding: 63px 75px 40px;
+        .service-bottom-box-h3 {
+            font-size: 2.8rem;
+            font-weight: bold;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .service-bottom-box-text {
+            font-size: 1.6rem;
+            line-height: 3.2rem;
+            text-align: center;
+        }
+    }
+}
+
+
+@media (max-width: 750px) {
+    .service-inner {
+        padding: 60px 5% 70px;
+        max-width: 100%;
+        margin: auto;
+        &.color-glay {
+            background-color: #F2F2F2;
+            padding: 60px 5% 70px;
+            .common-h3 {
+                font-size: 2rem;
+                span {
+                    &:after {
+                        background-color: #333333;
+                    }
+                }
+
+            }
+        }
+        .service-section {
+            margin-bottom: 65px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .service-sub {
+                font-size: 1.4rem;
+                font-weight: bold;
+                margin-bottom: 2vh;
+                text-align: center;
+            }
+            .secvice-box {
+                .service-h3 {
+                    margin-bottom: 4vh;
+                    text-align: center;
+                    .service-h3-01 {
+                        width: 80%;
+                    }
+                    .service-h3-02 {
+                        width: 80%;
+                    }
+                    .service-h3-03 {
+                        width: 60%;
+                    }
+                    .service-h3-04 {
+                        width: 80%;
+                    }
+                }
+                .secvice-box-h4 {
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                    color: #EC5805;
+                    text-align: left;
+                    margin-bottom: 20px;
+                }
+                .secvice-box-h4-2{
+                    font-size: 2rem;
+                    font-weight: bold;
+                    color: #262525;
+                    margin-bottom: 55px;
+                    text-align: center;
+                }
+                .secvice-box-logo {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    max-width: 300px;
+                    margin-top: -20px;
+                    figure {
+                        .secvice-box-logo-01 {
+                            width: 155px;
+                        }
+                        .secvice-box-logo-02 {
+                            width: 132px;
+                        }
+                    }
+                }
+            }
+
+            .service-lead {
+                font-size: 1.6rem;
+                line-height: 3rem;
+                margin-bottom: 105px;
+                text-align: left;
+            }
+            .secvice-box {
+                display: block;
+                padding:0;
+                .secvice-box-left {
+                    width: 100%;
+                }
+                .secvice-box-right {
+                    width: 100%;
+                }
+                .order-1 {
+                    order: 1;
+                }
+                .order-2 {
+                    order: 2;
+                }
+                .secvice-box-h3 {
+                    font-size: 2rem;
+                    line-height: 2.7rem;
+                    font-weight: bold;
+                    color: #262525;
+                    margin-bottom: 40px;
+                    text-align: center;
+                    &.color-red {
+                        color: #DD0000;
+                    }
+                    &.color-green {
+                        color: #809F18;
+                    }
+                    &.color-blue {
+                        color: #007DC8;
+                    }
+                    &.color-yellow {
+                        color: #E6AA00;
+                    }
+                }
+                .secvice-box-text {
+                    font-size: 1.6rem;
+                    line-height: 3.2rem;
+                    margin-bottom: 40px;
+                }
+                .secvice-box-img {
+                    width: 100%;
+                    margin: auto;
+                    display: block;
+                }
+            }
+            .img-center {
+                margin-bottom: 65px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .service-bottom-box {
+        max-width: 100%;
+        padding: 0 5%;
+        margin: 70px auto 75px;
+        background-color: #fff;
+        .service-bottom-box-inner {
+            padding: 35px 5% 60px;
+            background-color: #F2F2F2;
+            .service-bottom-box-h3 {
+                font-size: 2rem;
+                font-weight: bold;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            .service-bottom-box-text {
+                font-size: 1.6rem;
+                line-height: 3.2rem;
+                text-align: left;
+            }
+        }
+    }
+}

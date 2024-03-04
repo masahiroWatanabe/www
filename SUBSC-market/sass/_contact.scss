@@ -1,0 +1,1319 @@
+
+
+/*==================================================================================
+	partner
+==================================================================================*/
+
+@media (min-width: 751px) {
+	.contact{
+		.form-inner {
+			max-width: 1094px;
+			margin: 0 auto;
+			padding: 120px 5% 110px;
+			.form-lead {
+				font-size: 1.4rem;
+				line-height: 3.2rem;
+				margin-bottom: 65px;
+			}
+			.form-tab {
+				display: flex;
+				align-items: center;
+				a {
+					display:flex;
+					align-items: center;
+					justify-content: center;
+					width: 50%;
+					background-color: #DBD5D3;
+					color: #000000;
+					font-size: 2rem;
+					font-weight: 600;
+					padding: 25px 0;
+					&.active {
+						background-color: #64544F;
+						color: #fff;
+					}
+					&:hover {
+						opacity: .65;
+					}
+				}
+			}
+			.contact-form {
+				margin-top: 56px;
+				.form-block {
+					border-top: 1px solid #CCCBCB;
+					width: 100%;
+					display: flex;
+					-moz-box-sizing: border-box;
+					-webkit-box-sizing: border-box;
+					-o-box-sizing: border-box;
+					-ms-box-sizing: border-box;
+					box-sizing: border-box;
+					&.last-type {
+						border-bottom: 1px solid #CCCBCB;
+					}
+					.form-label {
+						position: relative;
+						font-size: 1.4rem;
+						color: #000;
+						padding-top:23px;
+						padding-left:100px;
+						padding-bottom: 23px;
+						word-break: break-all;
+						display: flex;
+						align-items: center;
+						width: 26%;
+						vertical-align: middle;
+						-moz-box-sizing: border-box;
+						-webkit-box-sizing: border-box;
+						-o-box-sizing: border-box;
+						-ms-box-sizing: border-box;
+						box-sizing: border-box;
+						background: #fff;
+						label{
+							font-weight: normal;
+						}
+					}
+
+					//必須
+					&.required {
+						.form-label:after {
+							position: absolute;
+							left: 45px;
+							top: 50%;
+							transform: translateY(-50%);
+							content: "必須";
+							font-size: 1rem;
+							line-height: 1;
+							padding: 4px 7px;
+							margin: auto;
+							color: #BA103F;
+							font-weight: 400;
+							background: #fff;
+							border: 1px solid #BA103F;
+						}
+					}
+
+					//テキスト入力
+					.form-input {
+						font-size: 14px;
+						word-break: break-all;
+						display: table-cell;
+						width: 70%;
+						vertical-align: top;
+						-moz-box-sizing: border-box;
+						-webkit-box-sizing: border-box;
+						-o-box-sizing: border-box;
+						-ms-box-sizing: border-box;
+						box-sizing: border-box;
+						padding-left: 5%;
+						padding-top: 18px;
+						padding-bottom: 18px;
+						input {
+							font-size: 1.4rem;
+							width: 99%;
+							border: 0;
+							background: #F5F5F5;
+							padding: 17px;
+							border-radius: 8px;
+						}
+						textarea {
+							font-size: 1.4rem;
+						}
+					}
+
+					//ラジオボタン
+					.form-input-radio {
+						padding-bottom: 2%;
+						width: 70%;
+						padding-left: 5%;
+						padding-top: 18px;
+						padding-bottom: 18px;
+						display: block;
+						align-items: center;
+					}
+					.form-input-radio-item {
+						display: inline-block;
+						margin-right: 15px;
+						margin-bottom: 25px;
+						label{
+							display: inline-block;
+							font-size: 1.4rem;
+							width: 100%;
+						}
+						input{
+							display: inline-block;
+						}
+						span{
+							display: inline-block;
+							font-size: 1.4rem;
+						}
+					}
+
+					//テキストエリア
+					.textarea-box{
+						textarea {
+							width: 99%;
+							border: 0;
+							background: #F2F2F2;
+							padding: 16px;
+							height: calc( 1.3em * 8 );
+							line-height: 1.3;
+							font-size: 14px;
+							border-radius: 8px;
+						}
+					}
+
+
+					// テキスト入力 独自デザイン //
+					.form-input {
+						font-size: 1.6rem;
+						line-height: 2.8rem;
+						word-break: break-all;
+						display: block;
+						width: 70%;
+						box-sizing: border-box;
+						input[type="text"],
+						input[type="email"],
+						input[type="tel"],
+						input[type="url"] {
+							width: 100%;
+							border: 2px solid #dad8d9;
+							border-radius: 3px;
+							background: #fff;
+							padding: 10px;
+							box-sizing: border-box;
+							font-size: 1.6rem;
+							height: 45px;
+						}
+						input[type="file"] {
+							font-size: 14px;
+						}
+						&.half {
+							input[type="text"],
+							input[type="email"],
+							input[type="tel"],
+							input[type="url"]
+							{
+								width: 47%;
+								margin-left: 2%;
+							}
+						}
+						&.form-tel {
+							display: flex;
+							align-items: center;
+							margin-bottom: 12px;
+							width: 100%;
+							input[type="file"] {
+								width: 60%;
+							}
+							.form-tel-text {
+								font-size: 1.4rem;
+								width: 30%;
+							}
+						}
+					}
+
+					// ラジオボタン独自デザイン //
+					.m-form-radio-wrap {
+						padding-bottom: 2%;
+						width: 70%;
+						padding-left: 5%;
+						padding-top: 40px;
+						padding-bottom: 15px;
+						display: block;
+						align-items: center;
+                        border-bottom: 2px solid #929292;
+					}
+					.m-form-radio{
+						margin-bottom: 25px;
+						input {
+							position: absolute;
+							white-space: nowrap;
+							width: 1px;
+							height: 1px;
+							overflow: hidden;
+							border: 0;
+							padding: 0;
+							clip: rect(0 0 0 0);
+							clip-path: inset(50%);
+							margin: -1px;
+						}
+					}
+					.m-form-radio-name {
+						cursor: pointer;
+						display: inline-flex;
+						align-items: center;
+						color: #666;
+						font-size: 1.4rem;
+						position: relative;
+						padding-left: 30px;
+						&:before {
+							content: "";
+							display: inline-block;
+							width: 1em;
+							height: 1em;
+							border: 1px solid #ccc;
+							border-radius: 50%;
+							margin-right: 10px;
+							flex-shrink: 0;
+							position: absolute;
+							left: 0;
+						}
+						&:after {
+							content: "";
+							display: inline-block;
+							width: 1em;
+							height: 1em;
+							border: 1px solid #ccc;
+							border-radius: 50%;
+							margin-right: 10px;
+							flex-shrink: 0;
+							position: absolute;
+							left: 0;
+						}
+					}
+					.m-form-radio input:checked + .m-form-radio-name:before {
+						border: 0.3em solid #fff;
+						background-color: #6E6E6E;
+					}
+
+					.m-form-radio input.focus-visible + .m-form-radio-name .m-form-radio-text {
+						background: #000;
+					}
+
+					// セレクトボックス 独自デザイン//
+					.m-form-select-flex {
+						display: flex;
+						align-items: center;
+						width: 65%;
+						margin-left: 1.5%;
+					}
+					.m-form-select {
+						position: relative;
+						display: flex;
+						align-items: center;
+						width: 70%;
+						&.one {
+							width: 40%;
+							select {
+								width: 100%;
+							}
+							&:before {
+								right: 42px;
+							}
+						}
+						&.two {
+							width: 30%;
+							select {
+								width: 100%;
+							}
+							&:before {
+								right: 42px;
+							}
+						}
+						&.three {
+							width: 30%;
+							select {
+								width: 100%;
+							}
+							&:before {
+								right: 42px;
+							}
+						}
+						.m-form-select-txt {
+							font-size: 1.4rem;
+							margin: 0 15px 0 5px;
+						}
+						&:before {
+							content: "";
+							position: absolute;
+							top: 0;
+							bottom: 0;
+							margin: auto;
+							right: 12px;
+							width: 8px;
+							height: 8px;
+							border-top: 2px solid #000;
+							border-right: 2px solid #000;
+							transform: rotate(135deg);
+							pointer-events: none;
+							z-index: 20;
+						}
+						select {
+							height: 45px;
+							width: 100%;
+							padding: 10px 15px;
+							border-radius: 3px;
+							border: none;
+							box-sizing: border-box;
+							box-shadow: 0 0 0 2px #ccc inset;
+							appearance: none;
+							-webkit-appearance: none;
+							-moz-appearance: none;
+							cursor: pointer;
+							position: relative;
+							font-size: 1.6rem;
+
+						}
+					}
+
+					// チェックボックス 独自デザイン//
+
+					.m-form-checkbox-wrap {
+					display: flex;
+					justify-content: space-between;
+					}
+					.m-form-checkbox{
+						box-shadow: 0 0 0 2px #ccc inset;
+						padding: 13px;
+						border-radius: 6px;
+						width: 48%;
+						input {
+							position: absolute;
+							white-space: nowrap;
+							width: 1px;
+							height: 1px;
+							overflow: hidden;
+							border: 0;
+							padding: 0;
+							clip: rect(0 0 0 0);
+							clip-path: inset(50%);
+							margin: -1px;
+						}
+					}
+
+					.m-form-checkbox-name {
+						cursor: pointer;
+						display: inline-flex;
+						align-items: center;
+						color: #666;
+						position: relative;
+						font-size: 1.6rem;
+						&:before {
+							content: "";
+							display: inline-block;
+							width: 20px;
+							height: 20px;
+							border: 2px solid #ccc;
+							border-radius: 3px;
+							margin-right: 35px;
+							flex-shrink: 0;
+						}
+					}
+					
+					.m-form-checkbox input:checked + .m-form-checkbox-name:before {
+						border: 1px solid #04a7e8;
+						background-color: #fff;
+					}
+					
+					.m-form-checkbox input:checked + .m-form-checkbox-name:after {
+						content: "";
+						position: absolute;
+						border: solid #04a7e8;
+						border-width: 0 2px 2px 0;
+						left: 0.4em;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+						width: 0.4em;
+						height: 0.6em;
+						transform: translateY(-2px) rotate(45deg);
+					}
+					
+					.m-form-checkbox input:focus-visible + .m-form-checkbox-name .m-form-checkbox-text {
+						background: linear-gradient(transparent 90%, rgba(33, 150, 243, 0.3) 90%);
+					}
+					
+					.m-form-checkbox input.focus-visible + .m-form-checkbox-name .m-form-checkbox-text {
+						background: linear-gradient(transparent 90%, rgba(33, 150, 243, 0.3) 90%);
+					}
+
+
+					p.error, span.error {
+						font-size: 2.5vmin;
+						margin-top: 3%;
+						padding: 0%;
+						display: inline-block;
+						color: red;
+					}
+				}
+
+				.form-buttom {
+					padding-top: 50px;
+					text-align: center;
+					.confirm-btn {
+						margin: 75px auto 0;
+						background-color: #000000;
+						font-size: 1.6rem;
+						font-weight: 600;
+						color: #fff;
+						max-width: 355px;
+						width: 100%;
+						border-radius: 0;
+						height: 53px;
+						-webkit-transition: all 0.2s;
+						transition: all 0.2s;
+						position: relative;
+						cursor: pointer;
+						border: 1px solid #707070;
+						&:hover {
+							background-color: #fff;
+							color: #000;
+							border: 1px solid #000;
+						}
+					}
+
+					.return-btn {
+						a {
+							margin: 33px auto 74px;
+							background-color: #fff;
+							max-width: 320px;
+							width: 100%;
+							border-radius: 30px;
+							height: 62px;
+							position: relative;
+							cursor: pointer;
+							border: 1px solid #707070;
+							display: flex;
+							align-items: center;
+							font-size: 1.6rem;
+							font-weight: 600;
+							justify-content: center;
+							&:hover {
+								background-color: #0075C1;
+								color: #fff;
+								border: 1px solid #fff;
+							}
+						}
+					}
+					.form-buttom-flex {
+						display: flex;
+						justify-content: center;
+						margin-bottom: 50px;
+						.return {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							margin: 33px auto 74px;
+							background-color: #9a9a9a;
+							font-size: 1.6rem;
+							font-weight: bold;
+							color: #fff;
+							max-width: 226px;
+							width: 100%;
+							border-radius: 31px;
+							height: 57px;
+							position: relative;
+							margin: 0 20px;
+							padding: 2% 0;
+							order: 1;
+							&:hover{
+								background-color: #fff;
+								color: #9a9a9a;
+								border: 1px solid #9a9a9a;
+							}
+						}
+						.entry {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							margin: 33px auto 74px;
+							background-color: #0075C1;
+							font-size: 1.6rem;
+							font-weight: bold;
+							color: #fff;
+							max-width: 226px;
+							width: 100%;
+							border-radius: 31px;
+							height: 57px;
+							position: relative;
+							margin: 0 20px;
+							padding: 2% 0;
+							order: 2;
+							&:hover {
+								background-color: #fff;
+								color: #0075C1;
+								border: 1px solid #0075C1;
+							}
+						}
+					}
+				}
+			}
+		}
+
+	}	
+}
+
+
+
+@media (max-width: 750px) {
+	.contact{
+
+		.form-inner {
+			max-width: 100%;
+			margin: 0 auto;
+			padding: 45px 5% 55px;
+			.form-lead {
+				font-size: 1.3rem;
+				line-height: 2.2rem;
+				margin-bottom: 50px;
+			}
+			.form-tab {
+				display: flex;
+				align-items: center;
+				a {
+					display:flex;
+					align-items: center;
+					justify-content: center;
+					width: 50%;
+					background-color: #DBD5D3;
+					color: #000000;
+					font-size: 1.4rem;
+					font-weight: 600;
+					padding: 20px 0;
+					&.active {
+						background-color: #64544F;
+						color: #fff;
+					}
+					&:hover {
+						opacity: .65;
+					}
+				}
+			}
+			.contact-form {
+				margin-top: 55px;
+				.form-block {
+					border-top: 1px solid #CCCBCB;
+					width: 100%;
+					display: block;
+					&.last-type {
+						border-bottom: 1px solid #CCCBCB;
+						.form-label {
+							padding-left: 0;
+						}
+					}
+					.form-label {
+						position: relative;
+						font-size: 1.4rem;
+						color: #000;
+						padding-top:18px;
+						padding-left:45px;
+						padding-bottom: 18px;
+						word-break: break-all;
+						display: flex;
+						align-items: center;
+						width: 100%;
+						vertical-align: middle;
+						-moz-box-sizing: border-box;
+						-webkit-box-sizing: border-box;
+						-o-box-sizing: border-box;
+						-ms-box-sizing: border-box;
+						box-sizing: border-box;
+						background: #fff;
+						label{
+							font-weight: normal;
+						}
+					}
+
+					//必須
+					&.required {
+						.form-label:after {
+							position: absolute;
+							left: 0;
+							top: 50%;
+							transform: translateY(-50%);
+							content: "必須";
+							font-size: 1rem;
+							line-height: 1;
+							padding: 4px 7px;
+							margin: auto;
+							color: #BA103F;
+							font-weight: 400;
+							background: #fff;
+							border: 1px solid #BA103F;
+						}
+					}
+
+					//テキスト入力
+					.form-input {
+						font-size: 14px;
+						word-break: break-all;
+						display: block;
+						width: 100%;
+						vertical-align: top;
+						-moz-box-sizing: border-box;
+						-webkit-box-sizing: border-box;
+						-o-box-sizing: border-box;
+						-ms-box-sizing: border-box;
+						box-sizing: border-box;
+						padding-left: 0;
+						padding-top: 0;
+						padding-bottom: 18px;
+						input {
+							font-size: 1.4rem;
+							width: 100%;
+							border: 0;
+							background: #F5F5F5;
+							padding: 13px;
+							border-radius: 4px;
+						}
+						textarea {
+							font-size: 1.4rem;
+						}
+					}
+
+					//ラジオボタン
+					.form-input-radio {
+						padding-bottom: 2%;
+						width: 100%;
+						padding-left: 5%;
+						padding-top: 18px;
+						padding-bottom: 18px;
+						display: block;
+						align-items: center;
+					}
+					.form-input-radio-item {
+						display: inline-block;
+						margin-right: 15px;
+						margin-bottom: 25px;
+						label{
+							display: inline-block;
+							font-size: 1.4rem;
+							width: 100%;
+						}
+						input{
+							display: inline-block;
+						}
+						span{
+							display: inline-block;
+							font-size: 1.4rem;
+						}
+					}
+					//テキストエリア
+					.textarea-box{
+						textarea {
+							width: 99%;
+							border: 0;
+							background: #F2F2F2;
+							padding: 16px;
+							height: calc( 1.3em * 8 );
+							line-height: 1.3;
+							font-size: 14px;
+							border-radius: 8px;
+						}
+					}
+
+
+
+					// テキスト入力 //
+					.form-input {
+						font-size: 1.6rem;
+						line-height: 2.8rem;
+						word-break: break-all;
+						display: block;
+						width: 100%;
+						-moz-box-sizing: border-box;
+						-webkit-box-sizing: border-box;
+						-o-box-sizing: border-box;
+						-ms-box-sizing: border-box;
+						box-sizing: border-box;
+						input[type="text"],
+						input[type="email"],
+						input[type="tel"],
+						input[type="url"] {
+							width: 100%;
+							border: 2px solid #dad8d9;
+							border-radius: 3px;
+							background: #fff;
+							padding: 10px;
+							box-sizing: border-box;
+							font-size: 1.6rem;
+							height: 45px;
+						}
+						input[type="file"] {
+							font-size: 14px;
+						}
+						&.half {
+							input[type="text"],
+							input[type="email"],
+							input[type="tel"],
+							input[type="url"] {
+								width: 48%;
+							}
+						}
+						&.form-tel {
+							display: flex;
+							align-items: center;
+							margin-bottom: 12px;
+							input[type="file"] {
+								width: 60%;
+							}
+							.form-tel-text {
+								font-size: 1.4rem;
+								width: 30%;
+							}
+						}
+					}
+
+					// ラジオボタン独自デザイン //
+					.m-form-radio-wrap {
+						padding-bottom: 2%;
+						width: 100%;
+						padding-left: 0;
+						padding-top: 20px;
+						padding-bottom: 13px;
+						display: block;
+						align-items: center;
+					}
+					.m-form-radio{
+						margin-bottom: 20px;
+						input {
+							position: absolute;
+							white-space: nowrap;
+							width: 1px;
+							height: 1px;
+							overflow: hidden;
+							border: 0;
+							padding: 0;
+							clip: rect(0 0 0 0);
+							clip-path: inset(50%);
+							margin: -1px;
+						}
+					}
+					.m-form-radio-name {
+						cursor: pointer;
+						display: inline-flex;
+						align-items: center;
+						color: #666;
+						font-size: 1.4rem;
+						line-height: 2.6rem;
+						position: relative;
+						padding-left: 30px;
+						&:before {
+							content: "";
+							display: inline-block;
+							width: 1em;
+							height: 1em;
+							border: 1px solid #ccc;
+							border-radius: 50%;
+							margin-right: 10px;
+							flex-shrink: 0;
+							position: absolute;
+							top: 15%;
+							left: 0;
+						}
+						&:after {
+							content: "";
+							display: inline-block;
+							width: 1em;
+							height: 1em;
+							border: 1px solid #ccc;
+							border-radius: 50%;
+							margin-right: 10px;
+							flex-shrink: 0;
+							position: absolute;
+							top: 15%;
+							left: 0;
+						}
+					}
+					.m-form-radio input:checked + .m-form-radio-name:before {
+						border: 0.3em solid #fff;
+						background-color: #6E6E6E;
+					}
+
+					.m-form-radio input.focus-visible + .m-form-radio-name .m-form-radio-text {
+						background: #000;
+					}
+
+					// セレクトボックス //
+					.m-form-select-flex {
+						display: flex;
+						align-items: center;
+					}
+					.m-form-select {
+						position: relative;
+						display: flex;
+						align-items: center;
+						&.one {
+							width: 40%;
+							select {
+								width: 80%;
+							}
+							&:before {
+								right: 42px;
+							}
+						}
+						&.two {
+							width: 30%;
+							select {
+								width: 80%;
+							}
+							&:before {
+								right: 42px;
+							}
+						}
+						&.three {
+							width: 30%;
+							select {
+								width: 80%;
+							}
+							&:before {
+								right: 42px;
+							}
+						}
+						.m-form-select-txt {
+							font-size: 1.4rem;
+							margin: 0 15px 0 5px;
+						}
+						&:before {
+							content: "";
+							position: absolute;
+							top: 0;
+							bottom: 0;
+							margin: auto;
+							right: 12px;
+							width: 8px;
+							height: 8px;
+							border-top: 2px solid #00acea;
+							border-right: 2px solid #00acea;
+							transform: rotate(135deg);
+							pointer-events: none;
+							z-index: 20;
+						}
+						select {
+							height: 45px;
+							width: 100%;
+							padding: 10px 15px;
+							border-radius: 3px;
+							border: none;
+							box-sizing: border-box;
+							box-shadow: 0 0 0 2px #ccc inset;
+							appearance: none;
+							-webkit-appearance: none;
+							-moz-appearance: none;
+							cursor: pointer;
+							position: relative;
+							font-size: 1.6rem;
+							&::-ms-expand {
+								display: none;
+							}
+							&:focus {
+								outline: 0;
+								box-shadow: 0 0 0 2px rgb(33, 150, 243) inset;
+							}
+						}
+					}
+
+
+
+					// チェックボックス //
+
+					.m-form-checkbox-wrap {
+						display: flex;
+						justify-content: space-between;
+					}
+					.m-form-checkbox{
+						box-shadow: 0 0 0 2px #ccc inset;
+						padding: 13px;
+						border-radius: 6px;
+						width: 48%;
+						input {
+							position: absolute;
+							white-space: nowrap;
+							width: 1px;
+							height: 1px;
+							overflow: hidden;
+							border: 0;
+							padding: 0;
+							clip: rect(0 0 0 0);
+							clip-path: inset(50%);
+							margin: -1px;
+						}
+					}
+
+					.m-form-checkbox-name {
+						cursor: pointer;
+						display: inline-flex;
+						align-items: center;
+						color: #666;
+						position: relative;
+						font-size: 1.6rem;
+						&:before {
+							content: "";
+							display: inline-block;
+							width: 20px;
+							height: 20px;
+							border: 2px solid #ccc;
+							border-radius: 3px;
+							margin-right: 35px;
+							flex-shrink: 0;
+						}
+					}
+					
+					.m-form-checkbox input:checked + .m-form-checkbox-name:before {
+						border: 1px solid #04a7e8;
+						background-color: #fff;
+					}
+					
+					.m-form-checkbox input:checked + .m-form-checkbox-name:after {
+						content: "";
+						position: absolute;
+						border: solid #04a7e8;
+						border-width: 0 2px 2px 0;
+						left: 0.4em;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+						width: 0.4em;
+						height: 0.6em;
+						transform: translateY(-2px) rotate(45deg);
+					}
+					
+					.m-form-checkbox input:focus-visible + .m-form-checkbox-name .m-form-checkbox-text {
+						background: linear-gradient(transparent 90%, rgba(33, 150, 243, 0.3) 90%);
+					}
+					
+					.m-form-checkbox input.focus-visible + .m-form-checkbox-name .m-form-checkbox-text {
+						background: linear-gradient(transparent 90%, rgba(33, 150, 243, 0.3) 90%);
+					}
+					
+					// テキストエリア //
+					.textarea-box{
+						textarea {
+							width: 100%;
+							border: 0;
+							background: #F2F2F2;
+							padding: 26px;
+							height: calc( 1.3em * 8 );
+							line-height: 1.3;
+							font-size: 14px;
+						}
+					}
+
+					// テキスト入力 独自デザイン//
+					.form-input {
+						font-size: 1.6rem;
+						line-height: 2.8rem;
+						word-break: break-all;
+						display: block;
+						width: 100%;
+						-moz-box-sizing: border-box;
+						-webkit-box-sizing: border-box;
+						-o-box-sizing: border-box;
+						-ms-box-sizing: border-box;
+						box-sizing: border-box;
+						input[type="text"],
+						input[type="email"],
+						input[type="tel"],
+						input[type="url"] {
+							width: 100%;
+							border: 2px solid #dad8d9;
+							border-radius: 3px;
+							background: #fff;
+							padding: 10px;
+							box-sizing: border-box;
+							font-size: 1.6rem;
+							height: 45px;
+						}
+						input[type="file"] {
+							font-size: 14px;
+						}
+						&.half {
+							input[type="text"],
+							input[type="email"],
+							input[type="tel"],
+							input[type="url"] {
+								width: 48%;
+							}
+						}
+						&.form-tel {
+							display: flex;
+							align-items: center;
+							margin-bottom: 12px;
+							input[type="file"] {
+								width: 60%;
+							}
+							.form-tel-text {
+								font-size: 1.4rem;
+								width: 30%;
+							}
+						}
+					}
+
+					// セレクトボックス 独自デザイン//
+					.m-form-select-flex {
+						display: flex;
+						align-items: center;
+					}
+					.m-form-select {
+						position: relative;
+						display: flex;
+						align-items: center;
+						&.one {
+							width: 40%;
+							select {
+								width: 80%;
+							}
+							&:before {
+								right: 42px;
+							}
+						}
+						&.two {
+							width: 30%;
+							select {
+								width: 80%;
+							}
+							&:before {
+								right: 42px;
+							}
+						}
+						&.three {
+							width: 30%;
+							select {
+								width: 80%;
+							}
+							&:before {
+								right: 42px;
+							}
+						}
+						.m-form-select-txt {
+							font-size: 1.4rem;
+							margin: 0 15px 0 5px;
+						}
+						&:before {
+							content: "";
+							position: absolute;
+							top: 0;
+							bottom: 0;
+							margin: auto;
+							right: 12px;
+							width: 8px;
+							height: 8px;
+							border-top: 2px solid #00acea;
+							border-right: 2px solid #00acea;
+							transform: rotate(135deg);
+							pointer-events: none;
+							z-index: 20;
+						}
+						select {
+							height: 45px;
+							width: 100%;
+							padding: 10px 15px;
+							border-radius: 3px;
+							border: none;
+							box-sizing: border-box;
+							box-shadow: 0 0 0 2px #ccc inset;
+							appearance: none;
+							-webkit-appearance: none;
+							-moz-appearance: none;
+							cursor: pointer;
+							position: relative;
+							font-size: 1.6rem;
+							&::-ms-expand {
+								display: none;
+							}
+							&:focus {
+								outline: 0;
+								box-shadow: 0 0 0 2px rgb(33, 150, 243) inset;
+							}
+						}
+					}
+
+					// チェックボックス 独自デザイン//
+
+					.m-form-checkbox-wrap {
+						display: flex;
+						justify-content: space-between;
+					}
+					.m-form-checkbox{
+						box-shadow: 0 0 0 2px #ccc inset;
+						padding: 13px;
+						border-radius: 6px;
+						width: 48%;
+						input {
+							position: absolute;
+							white-space: nowrap;
+							width: 1px;
+							height: 1px;
+							overflow: hidden;
+							border: 0;
+							padding: 0;
+							clip: rect(0 0 0 0);
+							clip-path: inset(50%);
+							margin: -1px;
+						}
+					}
+
+					.m-form-checkbox-name {
+						cursor: pointer;
+						display: inline-flex;
+						align-items: center;
+						color: #666;
+						position: relative;
+						font-size: 1.6rem;
+						&:before {
+							content: "";
+							display: inline-block;
+							width: 20px;
+							height: 20px;
+							border: 2px solid #ccc;
+							border-radius: 3px;
+							margin-right: 35px;
+							flex-shrink: 0;
+						}
+					}
+					
+					.m-form-checkbox input:checked + .m-form-checkbox-name:before {
+						border: 1px solid #04a7e8;
+						background-color: #fff;
+					}
+					
+					.m-form-checkbox input:checked + .m-form-checkbox-name:after {
+						content: "";
+						position: absolute;
+						border: solid #04a7e8;
+						border-width: 0 2px 2px 0;
+						left: 0.4em;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+						width: 0.4em;
+						height: 0.6em;
+						transform: translateY(-2px) rotate(45deg);
+					}
+					
+					.m-form-checkbox input:focus-visible + .m-form-checkbox-name .m-form-checkbox-text {
+						background: linear-gradient(transparent 90%, rgba(33, 150, 243, 0.3) 90%);
+					}
+					
+					.m-form-checkbox input.focus-visible + .m-form-checkbox-name .m-form-checkbox-text {
+						background: linear-gradient(transparent 90%, rgba(33, 150, 243, 0.3) 90%);
+					}
+					
+					// テキストエリア 独自デザイン//
+					.textarea-box{
+						textarea {
+							width: 100%;
+							border: 0;
+							background: #F2F2F2;
+							padding: 26px;
+							height: calc( 1.3em * 8 );
+							line-height: 1.3;
+							font-size: 14px;
+						}
+					}
+
+					p.error, span.error {
+						font-size: 2.5vmin;
+						margin-top: 3%;
+						padding: 0%;
+						display: inline-block;
+						color: red;
+					}
+				}
+
+				.form-buttom {
+					padding-top: 0;
+					text-align: center;
+					.confirm-btn {
+						margin: 55px auto 0;
+						background-color: #000000;
+						font-size: 1.6rem;
+						font-weight: 600;
+						color: #fff;
+						max-width: 355px;
+						width: 100%;
+						border-radius: 0;
+						height: 53px;
+						-webkit-transition: all 0.2s;
+						transition: all 0.2s;
+						position: relative;
+						cursor: pointer;
+						border: 1px solid #707070;
+						&:hover {
+							background-color: #fff;
+							color: #000;
+							border: 1px solid #000;
+						}
+					}
+
+					.return-btn {
+						a {
+							margin: 33px auto 74px;
+							background-color: #fff;
+							max-width: 320px;
+							width: 100%;
+							border-radius: 30px;
+							height: 62px;
+							position: relative;
+							cursor: pointer;
+							border: 1px solid #707070;
+							display: flex;
+							align-items: center;
+							font-size: 1.6rem;
+							font-weight: 600;
+							justify-content: center;
+							&:hover {
+								background-color: #0075C1;
+								color: #fff;
+								border: 1px solid #fff;
+							}
+						}
+					}
+					.form-buttom-flex {
+						display: flex;
+						justify-content: center;
+						margin-bottom: 50px;
+						.return {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							margin: 33px auto 74px;
+							background-color: #9a9a9a;
+							font-size: 1.6rem;
+							font-weight: bold;
+							color: #fff;
+							max-width: 226px;
+							width: 100%;
+							border-radius: 31px;
+							height: 57px;
+							position: relative;
+							margin: 0 20px;
+							padding: 2% 0;
+							order: 1;
+							&:hover{
+								background-color: #fff;
+								color: #9a9a9a;
+								border: 1px solid #9a9a9a;
+							}
+						}
+						.entry {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							margin: 33px auto 74px;
+							background-color: #0075C1;
+							font-size: 1.6rem;
+							font-weight: bold;
+							color: #fff;
+							max-width: 226px;
+							width: 100%;
+							border-radius: 31px;
+							height: 57px;
+							position: relative;
+							margin: 0 20px;
+							padding: 2% 0;
+							order: 2;
+							&:hover {
+								background-color: #fff;
+								color: #0075C1;
+								border: 1px solid #0075C1;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+

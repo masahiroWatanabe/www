@@ -1,0 +1,348 @@
+
+
+/*==================================================================================
+　company
+==================================================================================*/
+
+.company-h4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.company-inner-1 {
+    max-width: 1046px;
+    margin: auto;
+    padding:180px 0 0;
+    background: #fff;
+    .company-tab {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+        a {
+            display: block;
+            font-size: 1.6rem;
+            font-weight: bold;
+            width: 24%;
+            padding:20px;
+            box-sizing: border-box;
+            background: #EFEFEF;
+            color: #898888;
+            text-align: center;
+            &:hover {
+                background: #000;
+                color: #fff;  
+            }
+        }
+    }
+    .company-lead {
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 4rem;
+        margin-bottom: 110px;
+    }
+}
+
+.DX-strategy {
+    padding-top: 110px;
+    padding-bottom: 135px;
+    background:#fff;
+    .DX-strategy-inner {
+        max-width: 1046px;
+        margin: auto;
+    }
+    .DX-strategy-h4 {
+        font-size: 3.6rem;
+        line-height: 6rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 50px;
+        &.mt150 {
+            margin-top: 150px;
+        }
+    }
+    .DX-strategy-text{
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        margin-bottom: 40px;
+    }
+    .DX-strategy-img{
+        margin-top: 60px;
+    }
+}
+
+.DX-Vision {
+    padding-top: 140px;
+    padding-bottom: 200px;
+    background:#F2F2F2;
+    .DX-Vision-inner {
+        max-width: 1046px;
+        margin: auto;
+    }
+    .DX-Vision-text-01{
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    .DX-Vision-text-02{
+        font-size: 3.5rem;
+        font-weight: bold;
+        line-height: 5rem;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .DX-Vision-text-03{
+        font-size: 2.8rem;
+        font-weight: bold;
+        line-height: 4.2rem;
+        text-align: center;
+        margin-bottom: 125px;
+    }
+    .DX-Vision-text-04{
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        margin-bottom: 40px;
+        padding-left: 125px;
+    }
+}
+
+.Organization-chart {
+    padding-top: 140px;
+    padding-bottom: 150px;
+    background:#fff;
+    .Organization-chart-inner {
+        max-width: 950px;
+        margin: auto;
+    }
+    .Organization-chart-text-01{
+        font-size: 2rem;
+        line-height: 3.2rem;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    .Organization-chart-img {
+        text-align: center;
+        img {
+            width: 800px;
+            margin: auto;
+        }
+    }
+}
+
+.overview {
+    padding-bottom: 180px;
+    padding-top: 110px;
+    background:#F2F2F2;
+    .overview-inner {
+        max-width: 1046px;
+        margin: auto;
+        .overview-list {
+            display: flex;
+            font-size: 1.6rem;
+            line-height: 4rem;
+            padding: 37px 0;
+            border-top: 1px solid #DDDDDD;
+            &.last-child {
+                border-bottom:  1px solid #DDDDDD;
+            }
+            dt {
+                width: 200px;
+                font-weight: bold;
+            }
+        }
+        .company-map {
+            margin-top: 80px;
+            iframe {
+                width: 100%;
+                height: 360px;
+            }
+            iframe {
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            -ms-filter: grayscale(100%);
+            -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+            }
+        }
+    }
+
+}
+
+@media (max-width: 750px) {
+    .company-h3 {
+        font-size: 2.4rem;
+        font-weight: bold;
+        margin-bottom: 3vh;
+    }
+    .company-h4 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 18px;
+    }
+    .company-inner-1 {
+        max-width: 100%;
+        margin: auto;
+        padding:9vh 5% 0;
+        background: #fff;
+        .company-tab {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5vh;
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.4rem;
+                font-weight: bold;
+                width: 24%;
+                padding:3%;
+                box-sizing: border-box;
+                background: #EFEFEF;
+                color: #898888;
+                text-align: center;
+                &:hover {
+                    background: #000;
+                    color: #fff;  
+                }
+            }
+        }
+        .company-lead {
+            font-size: 1.6rem;
+            line-height: 2.8rem;
+            margin-bottom: 5vh;
+        }
+    }
+ 
+    .DX-strategy {
+        padding-top: 65px;
+        padding-bottom: 55px;
+        background:#fff;
+        .DX-strategy-inner {
+            max-width: 100%;
+            padding: 0 5%;
+            margin: auto;
+        }
+        .DX-strategy-h4 {
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 50px;
+            &.mt150 {
+                margin-top: 90px;
+            }
+        }
+        .DX-strategy-text{
+            font-size: 1.6rem;
+            line-height: 3.2rem;
+            margin-bottom: 40px;
+        }
+        .DX-strategy-img{
+            margin-top: 60px;
+            text-align: center;
+            img {
+                width: 175px;
+                margin: auto;
+            }
+        }
+    }
+    
+    .DX-Vision {
+        padding-top: 55px;
+        padding-bottom: 90px;
+        background:#F2F2F2;
+        .DX-Vision-inner {
+            max-width: 100%;
+            padding: 0 5%;
+            margin: auto;
+        }
+        .DX-Vision-text-01{
+            font-size: 1.6rem;
+            line-height: 3.2rem;
+            text-align: center;
+            margin-bottom: 45px;
+        }
+        .DX-Vision-text-02{
+            font-size: 2.4rem;
+            line-height: 3.3rem;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+        .DX-Vision-text-03{
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            text-align: center;
+            margin-bottom: 85px;
+        }
+        .DX-Vision-text-04{
+            font-size: 1.4rem;
+            line-height: 2.1rem;
+            margin-bottom: 25px;
+            padding-left: 0;
+        }
+    }
+    
+    .Organization-chart {
+        padding-top: 60px;
+        padding-bottom: 70px;
+        background:#fff;
+        .Organization-chart-inner {
+            max-width: 100%;
+            padding: 0 5%;
+            margin: auto;
+        }
+        .Organization-chart-text-01{
+            font-size: 1.6rem;
+            line-height: 3.2rem;
+            text-align: left;
+            margin-bottom: 0;
+        }
+        .Organization-chart-img {
+            text-align: center;
+            img {
+                width: 800px;
+                margin: auto;
+            }
+        }
+    }
+    
+    .overview {
+        padding-top: 70px;
+        padding-bottom: 50px;
+        margin-bottom: 0;
+        .overview-inner {
+            max-width: 100%;
+            margin: auto;
+            padding: 0 5%;
+            .overview-list {
+                display: block;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                margin-bottom: 0;
+                padding: 25px 0;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                dt {
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                    width: 100%;
+                }
+                dd {
+                    width: 100%;
+                }
+            }
+            .company-map {
+                margin-top: 5vh;
+                margin-bottom:0;
+                iframe {
+                    width: 100%;
+                    height: 35vh;
+                }
+            }
+        }
+    
+    }
+    
+}
